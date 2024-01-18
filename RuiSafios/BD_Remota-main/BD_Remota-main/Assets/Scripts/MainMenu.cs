@@ -16,11 +16,12 @@ public class MainMenu : MonoBehaviour
 
     public void VerificarUtilizador()
     {
-        Debug.Log("MainMenu Utilizador " + GestorPrograma.Instancia.Utilizador);
-        Debug.Log("MainMenu Pontuação: " + GestorPrograma.Instancia.Pontuacao);
-        Debug.Log("Sessão foi iniciada: " + GestorPrograma.Instancia.SessaoIniciada());
+        
         if (GestorPrograma.Instancia.SessaoIniciada() == true)
         {
+            Debug.Log("MainMenu Utilizador " + GestorPrograma.Instancia.Utilizador);
+            Debug.Log("MainMenu Pontuação: " + GestorPrograma.Instancia.Pontuacao);
+            Debug.Log("Sessão foi iniciada: " + GestorPrograma.Instancia.SessaoIniciada());
             InfoUtilizador.text = "Bem vindo " + GestorPrograma.Instancia.Utilizador + " pontuação atual: " + GestorPrograma.Instancia.Pontuacao;
         }
     }
