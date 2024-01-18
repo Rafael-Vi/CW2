@@ -56,7 +56,7 @@ public class Login : MonoBehaviour
                 
                 GestorPrograma.Instancia.Utilizador = nomeUtilizador.text;
                 GestorPrograma.Instancia.Pontuacao = int.Parse(resultados[1]);
-                Debug.Log("Utilizador: " + GestorPrograma.Instancia.Utilizador + " Pontaução: " + GestorPrograma.Instancia.Pontuacao);
+                Debug.Log("Utilizador: " + GestorPrograma.Instancia.Utilizador + " Pontuação: " + GestorPrograma.Instancia.Pontuacao);
 
                 //se o utilizador iniciar sessão corretamente corretamente volta para o menu inicial.
                 UnityEngine.SceneManagement.SceneManager.LoadScene(0);
@@ -72,6 +72,6 @@ public class Login : MonoBehaviour
     {
         //verificar se campos nome e password foram prenchidos com 8 ou mais caracteres
         //Permitir clicar no botão btnSubmeter apenas se a seguinte condição se verificar:
-        btnSubmeter.interactable = (nomeUtilizador.text.Length >= 3 && passwordUtilizador.text.Length >= 8);
+        btnSubmeter.interactable = (nomeUtilizador.text.Length >= 8 && passwordUtilizador.text.Length >= 8);
     }
 }

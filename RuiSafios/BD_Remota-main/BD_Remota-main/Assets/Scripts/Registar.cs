@@ -63,7 +63,7 @@ public class Registar : MonoBehaviour
     {
         //verificar se campos nome e password foram prenchidos com 8 ou mais caracteres
         //Permitir clicar no botão btnSubmeter apenas se a seguinte condição se verificar:
-        btnSubmeter.interactable = (nomeUtilizador.text.Length >= 3 && passwordUtilizador.text.Length >= 8);
+        btnSubmeter.interactable = (nomeUtilizador.text.Length >= 8 && passwordUtilizador.text.Length >= 8);
 
     }
 
