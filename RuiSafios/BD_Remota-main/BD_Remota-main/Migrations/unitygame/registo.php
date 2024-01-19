@@ -48,10 +48,10 @@
 	try {
 		// SMTP Configuration
 		$mail->isSMTP();
-		$mail->Host = 'your_smtp_server';
+		$mail->Host = 'smtp.gmail.com';
 		$mail->SMTPAuth = true;
-		$mail->Username = 'your_email@example.com';
-		$mail->Password = 'your_email_password';
+		$mail->Username = 'fatland.studio@gmail.com	';
+		$mail->Password = 'jorge1234';
 		$mail->SMTPSecure = 'tls';
 		$mail->Port = 587;
 
