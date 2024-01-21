@@ -5,7 +5,7 @@
 	use PHPMailer\PHPMailer\Exception;
 
 	// Load Composer's autoloader
-	require 'vendor/autoload.php';
+	require '../vendor/autoload.php';
 
 	// Simplified database connection
 	$ligacao = mysqli_connect('localhost', 'root', '', 'gamedb');
@@ -17,6 +17,7 @@
 
 	$nomeJogador = $_POST["nome"];
 	$passwordJogador = $_POST["pass"];
+	$email = $_POST["email"];
 
 	$dataregisto = date("Y-m-d H:i:s");
 	$pontuacao = 0;
@@ -37,7 +38,7 @@
 	// Generate a verification token
 	$verificationToken = md5(uniqid(rand(), true));
 
-	$qCriarUtilizador = "INSERT INTO jogador (nome, password, criado_em, salt, pontuacao, verification_token, is_verified) VALUES ('" . $nomeJogador . "', '" . $password . "', '" . $dataregisto . "', '" . $salt . "', '" . $pontuacao . "', '" . $verificationToken . "', 0)";
+	$qCriarUtilizador = "INSERT INTO jogador (nome, password, criado_em, salt, pontuacao, verification_token, is_verified, email) VALUES ('" . $nomeJogador . "', '" . $password . "', '" . $dataregisto . "', '" . $salt . "', '" . $pontuacao . "', '" . $verificationToken . "', 0, '" . $email . "')";
 
 	// Registar utilizador com token de verificação, mas não está verificado ainda
 	mysqli_query($ligacao, $qCriarUtilizador) or die("#4: Falha ao criar utilizador");

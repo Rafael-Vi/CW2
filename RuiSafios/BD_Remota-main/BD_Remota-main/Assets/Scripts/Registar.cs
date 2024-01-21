@@ -9,6 +9,7 @@ public class Registar : MonoBehaviour
     //variáveis necessárias para guardar o nome e pass do utilizador
     public InputField nomeUtilizador;
     public InputField passwordUtilizador;
+    public InputField emailUtilizador;
     //btnSubmeter
     public Button btnSubmeter;
 
@@ -24,6 +25,7 @@ public class Registar : MonoBehaviour
         //os valores são enviados para o servidor $_POST["nome"] e $_POST["pass"]
         form.AddField("nome", nomeUtilizador.text);
         form.AddField("pass", passwordUtilizador.text);
+        form.AddField("email", emailUtilizador.text);
 
         //fazer post para o servidor (URL para script .php)
         UnityWebRequest www = UnityWebRequest.Post("http://localhost/CW2/RuiSafios/BD_Remota-main/BD_Remota-main/unitygame/registo.php", form);
