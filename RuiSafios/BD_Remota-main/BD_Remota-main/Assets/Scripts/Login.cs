@@ -2,14 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 using UnityEngine.Networking;
 
 public class Login : MonoBehaviour
 {
 
     //variáveis necessárias para guardar o nome e pass do utilizador
-    public InputField nomeUtilizador;
-    public InputField passwordUtilizador;
+    public TMP_InputField nomeUtilizador;
+    public TMP_InputField passwordUtilizador;
     //btnSubmeter
     public Button btnSubmeter;
     

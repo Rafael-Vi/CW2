@@ -16,7 +16,7 @@ public class MainMenu : MonoBehaviour
 
     public void VerificarUtilizador()
     {
-        
+
         if (GestorPrograma.Instancia.SessaoIniciada() == true)
         {
             Debug.Log("MainMenu Utilizador " + GestorPrograma.Instancia.Utilizador);
