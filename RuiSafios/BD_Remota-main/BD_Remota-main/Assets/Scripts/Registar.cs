@@ -26,7 +26,7 @@ public class Registar : MonoBehaviour
         form.AddField("pass", passwordUtilizador.text);
 
         //fazer post para o servidor (URL para script .php)
-        UnityWebRequest www = UnityWebRequest.Post("http://localhost/CW2/RuiSafios/BD_Remota-main/BD_Remota-main/Migrations/unitygame/registo.php", form);
+        UnityWebRequest www = UnityWebRequest.Post("http://localhost/CW2/RuiSafios/BD_Remota-main/BD_Remota-main/unitygame/registo.php", form);
         //Pedir ao unity para executar e assim que receber toda a informação continua a execução do script
         yield return www.SendWebRequest();
 
@@ -34,7 +34,7 @@ public class Registar : MonoBehaviour
         if (www.result == UnityWebRequest.Result.ConnectionError || www.result == UnityWebRequest.Result.ProtocolError)
         {
             //Existem erros de comunicação
-            Debug.Log("Comunicação com o servidor falhou. Erro #" + www.error);
+            Debug.Log("Comunicação com o servidor falhou. Erro0 #" + www.error);
         }
             //Se não, o utilizador é criado com sucesso e voltamos ao menu principal
         else

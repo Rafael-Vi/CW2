@@ -28,7 +28,7 @@ public class Login : MonoBehaviour
         form.AddField("pass", passwordUtilizador.text);
 
         //fazer post para o servidor (URL para script .php)
-        UnityWebRequest www = UnityWebRequest.Post("http://localhost/CW2/RuiSafios/BD_Remota-main/BD_Remota-main/Migrations/unitygame/login.php", form);
+        UnityWebRequest www = UnityWebRequest.Post("http://localhost/CW2/RuiSafios/BD_Remota-main/BD_Remota-main/unitygame/login.php", form);
         //Pedir ao unity para executar e assim que receber toda a informação continua a execução do script
         yield return www.SendWebRequest();
 
