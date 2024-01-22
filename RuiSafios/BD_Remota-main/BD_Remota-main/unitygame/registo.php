@@ -8,14 +8,14 @@
 	require '../vendor/autoload.php';
 
 	// Simplified database connection
-	$ligacao = mysqli_connect('localhost', 'root', '', 'gamedb');
+	$ligacao = mysqli_connect('localhost', 'root', '', 'gamebd');
 
 	if (mysqli_connect_errno()) {
 		echo "#1: Erro ligação BD";
 		exit();
 	}
 
-	$nomeJogador = $_POST["nome"];
+	/*$nomeJogador = $_POST["nome"];
 	$passwordJogador = $_POST["pass"];
 	$email = $_POST["email"];
 
@@ -36,10 +36,10 @@
 	$password = crypt($passwordJogador, $salt);
 
 	// Generate a verification token
-	$verificationToken = md5(uniqid(rand(), true));
+	$verificationToken = md5(uniqid(rand(), true));*/
 
-	$qCriarUtilizador = "INSERT INTO jogador (nome, password, criado_em, salt, pontuacao, verification_token, is_verified, email) VALUES ('" . $nomeJogador . "', '" . $password . "', '" . $dataregisto . "', '" . $salt . "', '" . $pontuacao . "', '" . $verificationToken . "', 0, '" . $email . "')";
-
+	//$qCriarUtilizador = "INSERT INTO jogador (nome, password, criado_em, salt, pontuacao, verification_token, is_verified, email) VALUES ('" . $nomeJogador . "', '" . $password . "', '" . $dataregisto . "', '" . $salt . "', '" . $pontuacao . "', '" . $verificationToken . "', 0, '" . $email . "')";
+	$qCriarUtilizador = "INSERT INTO jogador (nome, password, criado_em, salt, pontuacao, verification_token, is_verified, email) VALUES ('John Doe', 'password123', '2022-01-01', 'somesalt', 100, 'token123', 0, 'rafa.pinto.vieira@gmail.com')";
 	// Registar utilizador com token de verificação, mas não está verificado ainda
 	mysqli_query($ligacao, $qCriarUtilizador) or die("#4: Falha ao criar utilizador");
 
@@ -49,21 +49,22 @@
 	try {
 		// SMTP Configuration
 		$mail->isSMTP();
-		$mail->Host = 'your_smtp_server';
+		$mail->Host = 'smtp.gmail.com';
 		$mail->SMTPAuth = true;
-		$mail->Username = 'your_email@example.com';
-		$mail->Password = 'your_email_password';
+		$mail->Username = 'fatland.studio@gmail.com';
+		$mail->Password = 'Jorge1234';
 		$mail->SMTPSecure = 'tls';
 		$mail->Port = 587;
 
 		// Sender and recipient information
-		$mail->setFrom('your_email@example.com', 'Your Name');
-		$mail->addAddress($email, $nomeJogador);
+		$mail->setFrom('fatland.studio@gmail.com', 'FATLAND');
+		//$mail->addAddress($email, $nomeJogador);
+		$mail->addAddress("rafa.pinto.vieira@gmail.com", "Jorge");
 
 		// Email content
 		$mail->isHTML(true);
 		$mail->Subject = 'Verification Email';
-		$mail->Body = 'Click the following link to verify your email: <a href="https://yourwebsite.com/verify.php?token=' . $verificationToken . '">Verify Email</a>';
+		$mail->Body = 'Click the following link to verify your email: <a href="https://yourwebsite.com/verify.php?token=">Verify Email</a>';
 
 		// Send email
 		$mail->send();
