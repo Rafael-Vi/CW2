@@ -15,7 +15,7 @@
 		exit();
 	}
 
-	/*$nomeJogador = $_POST["nome"];
+	$nomeJogador = $_POST["nome"];
 	$passwordJogador = $_POST["pass"];
 	$email = $_POST["email"];
 
@@ -36,11 +36,9 @@
 	$password = crypt($passwordJogador, $salt);
 
 	// Generate a verification token
-	$verificationToken = md5(uniqid(rand(), true));*/
+	$verificationToken = md5(uniqid(rand(), true));
 
-	//$qCriarUtilizador = "INSERT INTO jogador (nome, password, criado_em, salt, pontuacao, verification_token, is_verified, email) VALUES ('" . $nomeJogador . "', '" . $password . "', '" . $dataregisto . "', '" . $salt . "', '" . $pontuacao . "', '" . $verificationToken . "', 0, '" . $email . "')";
-	$qCriarUtilizador = "INSERT INTO jogador (nome, password, criado_em, salt, pontuacao, verification_token, is_verified, email) VALUES ('John Doe', 'password123', '2022-01-01', 'somesalt', 100, 'token123', 0, 'rafa.pinto.vieira@gmail.com')";
-	// Registar utilizador com token de verificação, mas não está verificado ainda
+	$qCriarUtilizador = "INSERT INTO jogador (nome, password, criado_em, salt, pontuacao, verification_token, is_verified, email) VALUES ('" . $nomeJogador . "', '" . $password . "', '" . $dataregisto . "', '" . $salt . "', '" . $pontuacao . "', '" . $verificationToken . "', 0, '" . $email . "')";
 	mysqli_query($ligacao, $qCriarUtilizador) or die("#4: Falha ao criar utilizador");
 
 	// Send verification email
@@ -52,7 +50,7 @@
 		$mail->Host = 'smtp.gmail.com';
 		$mail->SMTPAuth = true;
 		$mail->Username = 'fatland.studio@gmail.com';
-		$mail->Password = 'Jorge1234';
+		$mail->Password = 'npsd fypj odhe ujmy';
 		$mail->SMTPSecure = 'tls';
 		$mail->Port = 587;
 
@@ -64,7 +62,7 @@
 		// Email content
 		$mail->isHTML(true);
 		$mail->Subject = 'Verification Email';
-		$mail->Body = 'Click the following link to verify your email: <a href="https://yourwebsite.com/verify.php?token=">Verify Email</a>';
+		$mail->Body = 'Click the following link to verify your email: <a href="http://localhost/CW2/RuiSafios/BD_Remota-main/BD_Remota-main/unitygame/verificar.php?token='."$verificationToken".'">Verify Email</a>';
 
 		// Send email
 		$mail->send();

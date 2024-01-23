@@ -7,7 +7,7 @@
     require '../vendor/autoload.php';
 
     // Simplified database connection
-    $ligacao = mysqli_connect('localhost', 'root', '', 'gamedb');
+    $ligacao = mysqli_connect('localhost', 'root', '', 'gamebd');
 
     if (mysqli_connect_errno()) {
         echo "#1: Erro ligação BD";
@@ -24,9 +24,9 @@
     if (mysqli_num_rows($result) > 0) {
         // Token is valid, update the database to mark the user as verified
         $row = mysqli_fetch_assoc($result);
-        $userId = $row['id'];
+        $userId = $row['id_jogador'];
         
-        $qUpdateVerification = "UPDATE jogador SET is_verified = 1 WHERE id = $userId";
+        $qUpdateVerification = "UPDATE jogador SET is_verified = 1 WHERE id_jogador = $userId";
         mysqli_query($ligacao, $qUpdateVerification) or die("#6: Falha ao atualizar o estado de verificação");
 
         echo "Verification successful! You can now log in.";
