@@ -1,6 +1,6 @@
 <?php
 	//versão simplificada de ligação à BD
-	$ligacao = mysqli_connect('localhost', 'root', '', 'gamedb');
+	$ligacao = mysqli_connect('localhost', 'root', '', 'bd_remota');
 	
 	if(mysqli_connect_errno()){
 		//Forma simplificada de detetar erros 
@@ -36,7 +36,7 @@
 	}
 
 	$isVerified = $VerificarDadosRegistados["is_verified"];
-	if ($isVerified == 1) {
+	if ($isVerified == "1") {
 		// User account is verified
 		echo 0, "\t", $VerificarDadosRegistados["pontuacao"], "\t", "Account is verified";
 	} else {

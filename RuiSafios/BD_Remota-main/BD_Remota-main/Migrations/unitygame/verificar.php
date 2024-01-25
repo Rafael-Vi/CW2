@@ -7,7 +7,7 @@
     require 'vendor/autoload.php';
 
     // Simplified database connection
-    $ligacao = mysqli_connect('localhost', 'root', '', 'gamedb');
+    $ligacao = mysqli_connect('localhost', 'root', '', 'bd_remota');
 
     if (mysqli_connect_errno()) {
         echo "#1: Erro ligação BD";

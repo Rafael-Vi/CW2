@@ -8,7 +8,7 @@
 	require '../vendor/autoload.php';
 
 	// Simplified database connection
-	$ligacao = mysqli_connect('localhost', 'root', '', 'gamedb');
+	$ligacao = mysqli_connect('localhost', 'root', '', 'bd_remota');
 
 	if (mysqli_connect_errno()) {
 		echo "#1: Erro ligação BD";
@@ -51,13 +51,13 @@
 		$mail->SMTPAuth = true;
 		$mail->Username = 'fatland.studio@gmail.com';
 		$mail->Password = 'npsd fypj odhe ujmy';
-		$mail->SMTPSecure = 'tls';
-		$mail->Port = 587;
+		$mail->SMTPSecure = 'ssl';
+		$mail->Port = 465;
 
 		// Sender and recipient information
 		$mail->setFrom('fatland.studio@gmail.com', 'FATLAND');
 		//$mail->addAddress($email, $nomeJogador);
-		$mail->addAddress("rafa.pinto.vieira@gmail.com", "Jorge");
+		$mail->addAddress($email, $nomeJogador);
 
 		// Email content
 		$mail->isHTML(true);

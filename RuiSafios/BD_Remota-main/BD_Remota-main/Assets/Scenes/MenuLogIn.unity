@@ -477,7 +477,7 @@ GameObject:
   - component: {fileID: 609849021}
   - component: {fileID: 609849020}
   m_Layer: 4
-  m_Name: Nome Input
+  m_Name: Nome_Input
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1339,7 +1339,7 @@ GameObject:
   - component: {fileID: 1171035297}
   - component: {fileID: 1171035296}
   m_Layer: 4
-  m_Name: 'Password Input '
+  m_Name: 'Password_Input '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1884,9 +1884,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af8981c3c0df4984ea2237c04d975608, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeUtilizador: {fileID: 0}
-  passwordUtilizador: {fileID: 0}
-  btnSubmeter: {fileID: 0}
+  Nome_Imput: {fileID: 609849020}
+  Password_Imput: {fileID: 1171035296}
+  btnSubmeter: {fileID: 1265659986}
 --- !u!114 &1478575406
 MonoBehaviour:
   m_ObjectHideFlags: 0
