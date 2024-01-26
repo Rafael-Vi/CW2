@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1884,8 +1884,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af8981c3c0df4984ea2237c04d975608, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Nome_Imput: {fileID: 609849020}
-  Password_Imput: {fileID: 1171035296}
+  Nome_Input: {fileID: 0}
+  Password_Input: {fileID: 0}
   btnSubmeter: {fileID: 1265659986}
 --- !u!114 &1478575406
 MonoBehaviour:
@@ -1929,7 +1929,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
