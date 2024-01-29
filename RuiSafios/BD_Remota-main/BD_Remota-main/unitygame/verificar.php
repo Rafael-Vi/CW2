@@ -4,10 +4,10 @@
     use PHPMailer\PHPMailer\Exception;
 
     // Load Composer's autoloader
-    require '../vendor/autoload.php';
+    require '../Migrations/vendor/autoload.php';
 
     // Simplified database connection
-    $ligacao = mysqli_connect('localhost', 'root', '', 'bd_remota');
+    $ligacao = mysqli_connect('localhost', 'root', '', 'gamebd');
 
     if (mysqli_connect_errno()) {
         echo "#1: Erro ligação BD";

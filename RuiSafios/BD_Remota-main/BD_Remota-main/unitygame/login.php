@@ -1,6 +1,6 @@
 <?php
 	//versão simplificada de ligação à BD
-	$ligacao = mysqli_connect('localhost', 'root', '', 'bd_remota');
+	$ligacao = mysqli_connect('localhost', 'root', '', 'gamebd');
 	
 	if(mysqli_connect_errno()){
 		//Forma simplificada de detetar erros 
@@ -41,7 +41,8 @@
 		echo 0, "\t", $VerificarDadosRegistados["pontuacao"], "\t", "Account is verified";
 	} else {
 		// User account is not verified
-		echo 0, "\t", $VerificarDadosRegistados["pontuacao"], "\t", "Account is not verified";
+		echo "Account is not verified";
+		exit();
 	}
 	echo 0 , "\t" , $VerificarDadosRegistados["pontuacao"];
 ?>

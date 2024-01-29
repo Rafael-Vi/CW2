@@ -5,10 +5,10 @@
 	use PHPMailer\PHPMailer\Exception;
 
 	// Load Composer's autoloader
-	require '../vendor/autoload.php';
+	require '../Migrations/vendor/autoload.php';
 
 	// Simplified database connection
-	$ligacao = mysqli_connect('localhost', 'root', '', 'bd_remota');
+	$ligacao = mysqli_connect('localhost', 'root', '', 'gamebd');
 
 	if (mysqli_connect_errno()) {
 		echo "#1: Erro ligação BD";
@@ -62,7 +62,7 @@
 		// Email content
 		$mail->isHTML(true);
 		$mail->Subject = 'Verification Email';
-		$mail->Body = 'Click the following link to verify your email: <a href="http://localhost/unitygame/verificar.php?token='."$verificationToken".'">Verify Email</a>';
+		$mail->Body = 'Click the following link to verify your email: <a href="http://localhost/CW2/RuiSafios/BD_Remota-main/BD_Remota-main/unitygame/verificar.php?token='."$verificationToken".'">Verify Email</a>';
 
 		// Send email
 		$mail->send();
