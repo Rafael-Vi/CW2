@@ -26,9 +26,11 @@ public class Registar : MonoBehaviour
         form.AddField("nome", nomeUtilizador.text);
         form.AddField("pass", passwordUtilizador.text);
         form.AddField("email", emailUtilizador.text);
-
+            
         //fazer post para o servidor (URL para script .php)
-        UnityWebRequest www = UnityWebRequest.Post("http://localhost/CW2/RuiSafios/BD_Remota-main/BD_Remota-main/unitygame/registo.php", form);
+        //UnityWebRequest www = UnityWebRequest.Post("http://localhost/unitygame/registo.php", form);
+        UnityWebRequest www = UnityWebRequest.Post("http://localhost/Migrations/unitygame/registo.php", form);
+        
         //Pedir ao unity para executar e assim que receber toda a informação continua a execução do script
         yield return www.SendWebRequest();
 
@@ -65,7 +67,7 @@ public class Registar : MonoBehaviour
     {
         //verificar se campos nome e password foram prenchidos com 8 ou mais caracteres
         //Permitir clicar no botão btnSubmeter apenas se a seguinte condição se verificar:
-        btnSubmeter.interactable = (nomeUtilizador.text.Length >= 8 && passwordUtilizador.text.Length >= 8);
+        btnSubmeter.interactable = (nomeUtilizador.text.Length >= 8 && passwordUtilizador.text.Length >= 8 && emailUtilizador.text.Length >= 8);
 
     }
 

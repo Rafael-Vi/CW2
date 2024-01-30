@@ -9,8 +9,8 @@ public class Login : MonoBehaviour
 {
 
     //variáveis necessárias para guardar o nome e pass do utilizador
-    public TMP_InputField nomeUtilizador;
-    public TMP_InputField passwordUtilizador;
+    public TMP_InputField Nome_Input;
+    public TMP_InputField Password_Input;
     //btnSubmeter
     public Button btnSubmeter;
     
@@ -25,11 +25,11 @@ public class Login : MonoBehaviour
         //preparar dados a enviar para o servidor
         WWWForm form = new WWWForm();
         //os valores são enviados para o servidor $_POST["nome"] e $_POST["pass"]
-        form.AddField("nome", nomeUtilizador.text);
-        form.AddField("pass", passwordUtilizador.text);
+        form.AddField("nome", Nome_Input.text);
+        form.AddField("pass", Password_Input.text);
 
         //fazer post para o servidor (URL para script .php)
-        UnityWebRequest www = UnityWebRequest.Post("http://localhost/CW2/RuiSafios/BD_Remota-main/BD_Remota-main/unitygame/login.php", form);
+         UnityWebRequest www = UnityWebRequest.Post("http://localhost/Migrations/unitygame/login.php", form);
         //Pedir ao unity para executar e assim que receber toda a informação continua a execução do script
         yield return www.SendWebRequest();
 
@@ -55,7 +55,7 @@ public class Login : MonoBehaviour
             {
                 //Enviar dados para GestorBaseDados
                 
-                GestorPrograma.Instancia.Utilizador = nomeUtilizador.text;
+                GestorPrograma.Instancia.Utilizador = Nome_Input.text;
                 GestorPrograma.Instancia.Pontuacao = int.Parse(resultados[1]);
                 Debug.Log("Utilizador: " + GestorPrograma.Instancia.Utilizador + " Pontuação: " + GestorPrograma.Instancia.Pontuacao);
 
@@ -73,6 +73,6 @@ public class Login : MonoBehaviour
     {
         //verificar se campos nome e password foram prenchidos com 8 ou mais caracteres
         //Permitir clicar no botão btnSubmeter apenas se a seguinte condição se verificar:
-        btnSubmeter.interactable = (nomeUtilizador.text.Length >= 8 && passwordUtilizador.text.Length >= 8);
+        btnSubmeter.interactable = (Nome_Input.text.Length >= 8 && Password_Input.text.Length >= 8);
     }
 }

@@ -5,10 +5,10 @@
 	use PHPMailer\PHPMailer\Exception;
 
 	// Load Composer's autoloader
-	require '../vendor/autoload.php';
+	require('C:\xampp\htdocs\Migrations\vendor\autoload.php');
 
 	// Simplified database connection
-	$ligacao = mysqli_connect('localhost', 'root', '', 'gamedb');
+	$ligacao = mysqli_connect('localhost', 'root', '', 'gamebd');
 
 	if (mysqli_connect_errno()) {
 		echo "#1: Erro ligação BD";
@@ -39,8 +39,6 @@
 	$verificationToken = md5(uniqid(rand(), true));
 
 	$qCriarUtilizador = "INSERT INTO jogador (nome, password, criado_em, salt, pontuacao, verification_token, is_verified, email) VALUES ('" . $nomeJogador . "', '" . $password . "', '" . $dataregisto . "', '" . $salt . "', '" . $pontuacao . "', '" . $verificationToken . "', 0, '" . $email . "')";
-
-	// Registar utilizador com token de verificação, mas não está verificado ainda
 	mysqli_query($ligacao, $qCriarUtilizador) or die("#4: Falha ao criar utilizador");
 
 	// Send verification email
@@ -49,21 +47,22 @@
 	try {
 		// SMTP Configuration
 		$mail->isSMTP();
-		$mail->Host = 'your_smtp_server';
+		$mail->Host = 'smtp.gmail.com';
 		$mail->SMTPAuth = true;
-		$mail->Username = 'your_email@example.com';
-		$mail->Password = 'your_email_password';
-		$mail->SMTPSecure = 'tls';
-		$mail->Port = 587;
+		$mail->Username = 'fatland.studio@gmail.com';
+		$mail->Password = 'npsd fypj odhe ujmy';
+		$mail->SMTPSecure = 'ssl';
+		$mail->Port = 465;
 
 		// Sender and recipient information
-		$mail->setFrom('your_email@example.com', 'Your Name');
+		$mail->setFrom('fatland.studio@gmail.com', 'FATLAND');
+		//$mail->addAddress($email, $nomeJogador);
 		$mail->addAddress($email, $nomeJogador);
 
 		// Email content
 		$mail->isHTML(true);
 		$mail->Subject = 'Verification Email';
-		$mail->Body = 'Click the following link to verify your email: <a href="https://yourwebsite.com/verify.php?token=' . $verificationToken . '">Verify Email</a>';
+		$mail->Body = 'Click the following link to verify your email: <a href="http://localhost/Migrations/unitygame/verificar.php?token='."$verificationToken".'">Verify Email</a>';
 
 		// Send email
 		$mail->send();

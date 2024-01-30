@@ -1,6 +1,6 @@
 <?php
 	//versão simplificada de ligação à BD
-	$ligacao = mysqli_connect('localhost', 'root', '', 'gamedb');
+	$ligacao = mysqli_connect('localhost', 'root', '', 'gamebd');
 	
 	if(mysqli_connect_errno()){
 		//Forma simplificada de detetar erros 
