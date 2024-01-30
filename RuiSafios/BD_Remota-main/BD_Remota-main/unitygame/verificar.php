@@ -4,7 +4,7 @@
     use PHPMailer\PHPMailer\Exception;
 
     // Load Composer's autoloader
-    require '../Migrations/vendor/autoload.php';
+    require('C:\xampp\htdocs\Migrations\vendor\autoload.php');
 
     // Simplified database connection
     $ligacao = mysqli_connect('localhost', 'root', '', 'gamebd');

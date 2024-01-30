@@ -5,7 +5,7 @@
 	use PHPMailer\PHPMailer\Exception;
 
 	// Load Composer's autoloader
-	require '../Migrations/vendor/autoload.php';
+	require('C:\xampp\htdocs\Migrations\vendor\autoload.php');
 
 	// Simplified database connection
 	$ligacao = mysqli_connect('localhost', 'root', '', 'gamebd');
@@ -62,7 +62,7 @@
 		// Email content
 		$mail->isHTML(true);
 		$mail->Subject = 'Verification Email';
-		$mail->Body = 'Click the following link to verify your email: <a href="http://localhost/CW2/RuiSafios/BD_Remota-main/BD_Remota-main/unitygame/verificar.php?token='."$verificationToken".'">Verify Email</a>';
+		$mail->Body = 'Click the following link to verify your email: <a href="http://localhost/Migrations/unitygame/verificar.php?token='."$verificationToken".'">Verify Email</a>';
 
 		// Send email
 		$mail->send();
