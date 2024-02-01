@@ -30,7 +30,7 @@ if (confirmar) {
 	( 
 		{
 			nome: o_textBox.text,
-			palavrapasse: o_textPassBox.text,
+			palavrapasse: base64_encode(o_textPassBox.text),
 			room: rm_level1
 		}
 	);
