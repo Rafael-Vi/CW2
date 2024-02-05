@@ -1,7 +1,8 @@
 walkspd = 4;
 hsp = 0;
 vsp = 0;
-hp = 5;
+fullhp = 5;
+hp = fullhp;
 ivccd = 0;
 deathcd = 120;
 angle = 0;
