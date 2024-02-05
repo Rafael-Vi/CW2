@@ -4,7 +4,7 @@
   "name": "s_bala",
   "bbox_bottom": 7,
   "bbox_left": 0,
-  "bbox_right": 17,
+  "bbox_right": 11,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 0,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 18,
+  "width": 12,
 }
