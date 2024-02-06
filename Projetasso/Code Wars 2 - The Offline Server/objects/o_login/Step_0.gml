@@ -13,7 +13,7 @@ if place_meeting(x,y,o_mira) && mouse_check_button_released(mb_left) {
 	}
 	if (confirmar) {	
 		confirmar = false;
-		room_goto(rm_main_menu);
+		room_goto(rmMenu);
 	} else {
 		show_message("Nome ou palavra-passe incorretos");
 	}

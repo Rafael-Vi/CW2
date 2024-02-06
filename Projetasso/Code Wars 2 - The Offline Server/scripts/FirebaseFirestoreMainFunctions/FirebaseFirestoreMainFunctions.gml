@@ -6,7 +6,7 @@ function RESTFirebaseFirestore_Collection_Add(path,json)
 	
 	var listener = FirebaseREST_asyncFunction_Firestore(
 				"FirebaseFirestore_Collection_Add",
-				Obj_FirebaseREST_Listener_Once_Firestore,
+				o_FirebaseREST_Listener_Once_Firestore,
 				FirebaseREST_Firestore_getURL(path),
 				"POST",
 				FirebaseREST_Firestore_headerToken(),
@@ -22,7 +22,7 @@ function RESTFirebaseFirestore_Collection_Read(path)
 	
 	var listener = FirebaseREST_asyncFunction_Firestore(
 				"FirebaseFirestore_Collection_Read",
-				Obj_FirebaseREST_Listener_Once_Firestore,
+				o_FirebaseREST_Listener_Once_Firestore,
 				FirebaseREST_Firestore_getURL(path),
 				"GET",
 				FirebaseREST_Firestore_headerToken(),
@@ -38,7 +38,7 @@ function RESTFirebaseFirestore_Collection_Listener(path)
 	
 	var listener = FirebaseREST_asyncFunction_Firestore(
 				"FirebaseFirestore_Collection_Listener",
-				Obj_FirebaseREST_Listener_On_firestore_collection,
+				o_FirebaseREST_Listener_On_firestore_collection,
 				FirebaseREST_Firestore_getURL(path),
 				"GET",
 				FirebaseREST_Firestore_headerToken(),
@@ -197,7 +197,7 @@ function RESTFirebaseFirestore_Collection_Query(struct)
 	
 	var listener = FirebaseREST_asyncFunction_Firestore(
 				"FirebaseFirestore_Collection_Query",
-				Obj_FirebaseREST_Listener_Once_Firestore,
+				o_FirebaseREST_Listener_Once_Firestore,
 				FirebaseREST_Firestore_getURL(path),
 				"POST",
 				FirebaseREST_Firestore_headerToken(),
@@ -217,7 +217,7 @@ function RESTFirebaseFirestore_Document_Delete(path)
 	
 	var listener = FirebaseREST_asyncFunction_Firestore(
 			"FirebaseFirestore_Document_Delete",
-			Obj_FirebaseREST_Listener_Once_Firestore,
+			o_FirebaseREST_Listener_Once_Firestore,
 			FirebaseREST_Firestore_getURL(path),
 			"DELETE",
 			FirebaseREST_Firestore_headerToken(),
@@ -235,7 +235,7 @@ function RESTFirebaseFirestore_Document_Read(path)
 	
 	var listener = FirebaseREST_asyncFunction_Firestore(
 				"FirebaseFirestore_Document_Read",
-				Obj_FirebaseREST_Listener_Once_Firestore,
+				o_FirebaseREST_Listener_Once_Firestore,
 				FirebaseREST_Firestore_getURL(path),
 				"GET",
 				FirebaseREST_Firestore_headerToken(),
@@ -252,7 +252,7 @@ function RESTFirebaseFirestore_Document_Listener(path)
 	
 	var listener = FirebaseREST_asyncFunction_Firestore(
 				"FirebaseFirestore_Document_Listener",
-				Obj_FirebaseREST_Listener_On_firestore_document,
+				o_FirebaseREST_Listener_On_firestore_document,
 				FirebaseREST_Firestore_getURL(path),
 				"GET",
 				FirebaseREST_Firestore_headerToken(),
@@ -273,7 +273,7 @@ function RESTFirebaseFirestore_Document_Set(path,json)
 	var ref_ = FirebaseFirestore_Path_Back(path,1)
 	var listener = FirebaseREST_asyncFunction_Firestore(
 				"FirebaseFirestore_Document_Set",
-				Obj_FirebaseREST_Listener_Once_Firestore,
+				o_FirebaseREST_Listener_Once_Firestore,
 				FirebaseREST_Firestore_getURL(ref_),
 				"POST",
 				FirebaseREST_Firestore_headerToken(),
@@ -292,7 +292,7 @@ function RESTFirebaseFirestore_Document_Set(path,json)
 	
 	var listener = FirebaseREST_asyncFunction_Firestore(
 					"RESTFirebaseFirestore_Document_Set",
-					Obj_FirebaseREST_Listener_Once_Firestore,
+					o_FirebaseREST_Listener_Once_Firestore,
 					FirebaseREST_Firestore_getURL(path),
 					"PATCH",
 					FirebaseREST_Firestore_headerToken(),
@@ -308,7 +308,7 @@ function RESTFirebaseFirestore_Document_Update(path,json)
 	
 	var listener = FirebaseREST_asyncFunction_Firestore(
 					"RESTFirebaseFirestore_Document_Update",
-					Obj_FirebaseREST_Listener_Once_Firestore,
+					o_FirebaseREST_Listener_Once_Firestore,
 					FirebaseREST_Firestore_getURL(path),
 					"PATCH",
 					FirebaseREST_Firestore_headerToken(),

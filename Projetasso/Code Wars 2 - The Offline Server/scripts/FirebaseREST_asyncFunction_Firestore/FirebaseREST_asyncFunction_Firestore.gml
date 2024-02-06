@@ -1,6 +1,6 @@
-function FirebaseREST_asyncFunction_Firestore(event,obj,url,method_,header_json,body)
+function FirebaseREST_asyncFunction_Firestore(event,o_,url,method_,header_json,body)
 {
-	var ins = instance_create_depth(0,0,0,obj);
+	var ins = instance_create_depth(0,0,0,o_);
 	ins.event = event
 	ins.url = url
 	ins.method_ = method_

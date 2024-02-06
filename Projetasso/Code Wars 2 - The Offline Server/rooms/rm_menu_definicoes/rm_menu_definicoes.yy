@@ -8,7 +8,10 @@
   "inheritLayers": false,
   "instanceCreationOrder": [
     {"name":"inst_15BC4855","path":"rooms/rm_menu_definicoes/rm_menu_definicoes.yy",},
-    {"name":"inst_3859C735","path":"rooms/rm_menu_definicoes/rm_menu_definicoes.yy",},
+    {"name":"inst_52B2C61B","path":"rooms/rm_menu_definicoes/rm_menu_definicoes.yy",},
+    {"name":"inst_227E66BF","path":"rooms/rm_menu_definicoes/rm_menu_definicoes.yy",},
+    {"name":"inst_715424D0","path":"rooms/rm_menu_definicoes/rm_menu_definicoes.yy",},
+    {"name":"inst_3DEE629E","path":"rooms/rm_menu_definicoes/rm_menu_definicoes.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -16,10 +19,10 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_15BC4855","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"o_title","path":"objects/o_title/o_title.yy",},"properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"o_title","path":"objects/o_title/o_title.yy",},"propertyId":{"name":"title","path":"objects/o_title/o_title.yy",},"value":"Definições",},
           ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":320.0,"y":32.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3859C735","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"o_hiperligacao","path":"objects/o_hiperligacao/o_hiperligacao.yy",},"properties":[
-            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"o_hiperligacao","path":"objects/o_hiperligacao/o_hiperligacao.yy",},"propertyId":{"name":"destino","path":"objects/o_hiperligacao/o_hiperligacao.yy",},"value":"rm_main_menu",},
-            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"o_hiperligacao","path":"objects/o_hiperligacao/o_hiperligacao.yy",},"propertyId":{"name":"nome","path":"objects/o_hiperligacao/o_hiperligacao.yy",},"value":"Voltar",},
-          ],"rotation":0.0,"scaleX":29.222221,"scaleY":5.0,"x":192.0,"y":288.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_52B2C61B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"o_ButtonDisplaySettings","path":"objects/o_ButtonDisplaySettings/o_ButtonDisplaySettings.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":128.0,"y":96.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_227E66BF","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"o_ButtonAudioSettings","path":"objects/o_ButtonAudioSettings/o_ButtonAudioSettings.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":128.0,"y":160.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_715424D0","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"o_ButtonInterfaceSettings","path":"objects/o_ButtonInterfaceSettings/o_ButtonInterfaceSettings.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":128.0,"y":224.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3DEE629E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"o_ButtonBack","path":"objects/o_ButtonBack/o_ButtonBack.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":128.0,"y":288.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":true,"visible":true,},
     {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4278190080,"depth":120,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
