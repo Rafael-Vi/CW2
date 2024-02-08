@@ -1,7 +1,7 @@
 walkspd = 4;
 hsp = 0;
 vsp = 0;
-fullhp = 5;
+fullhp = 6;
 hp = fullhp;
 ivccd = 0;
 deathcd = 120;

@@ -1,6 +1,6 @@
-x = mouse_x;
-y = mouse_y;
 if instance_exists(o_avelino) {
+	x = mouse_x;
+	y = mouse_y;
 	if (global.key_attack) {
 		image_angle += 8;
 		image_speed = 0;
@@ -24,9 +24,7 @@ if instance_exists(o_avelino) {
 	} else {
 		image_index = 0;
 	}
-}
-
-scrGetInput();
+	scrGetInput();
 
 if input_up y -= 64;
 if input_down y += 64;
@@ -43,4 +41,5 @@ if instance_exists(o_ButtonParent) {
 	{
 		audio_play_sound(sndFocusChange,0,0);	
 	}
+}
 }

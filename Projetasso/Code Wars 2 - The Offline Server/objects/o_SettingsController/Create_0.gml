@@ -8,9 +8,9 @@ global.zoom = ini_read_real("Display","Zoom",0);
 window_set_fullscreen(global.fullscreen);
 
 //Load audio settings
-global.master_volume = ini_read_real("Audio","Master",5);
-global.sounds_volume = ini_read_real("Audio","Sounds",5);
-global.music_volume = ini_read_real("Audio","Music",5);
+global.master_volume	= ini_read_real("Audio","Master",5);
+global.sounds_volume	= ini_read_real("Audio","Sounds",5);
+global.music_volume		= ini_read_real("Audio","Music",5);
 global.interface_volume = ini_read_real("Audio","UI",5);
 
 audio_group_set_gain(audiogroup_sounds,global.master_volume/10*(global.sounds_volume/10),0);

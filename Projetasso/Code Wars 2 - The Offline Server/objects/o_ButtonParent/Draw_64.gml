@@ -12,4 +12,4 @@ else
 {
 	draw_set_color(color_default);
 }
-draw_text(x+sprite_width/2,y+sprite_height/2,string(scrGetString(text)));
+draw_text(x+sprite_width/2,y+sprite_height/2,text);

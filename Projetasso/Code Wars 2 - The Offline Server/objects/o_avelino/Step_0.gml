@@ -26,7 +26,6 @@ if hp {
 	x += hsp;
 	
 	if (hsp != 0 || vsp != 0) angle += (abs(hsp)+abs(vsp)); else angle = 0;
-	image_angle = sin(angle/15)*10;
 	
 	if (ivccd > 0) {
 		ivccd --;
