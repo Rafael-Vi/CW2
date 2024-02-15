@@ -4,12 +4,15 @@
   "name": "o_SettingSoundVol",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
   ],
   "managed": true,
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"o_SettingParent","path":"objects/o_SettingParent/o_SettingParent.yy",},"propertyId":{"name":"text","path":"objects/o_SettingParent/o_SettingParent.yy",},"value":"Sons",},
+  ],
   "parent": {
     "name": "Settings",
-    "path": "folders/Objects/Settings.yy",
+    "path": "folders/Objetos/Menu/Settings.yy",
   },
   "parentObjectId": {
     "name": "o_SettingParent",

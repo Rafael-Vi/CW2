@@ -26,20 +26,28 @@ if instance_exists(o_avelino) {
 	}
 	scrGetInput();
 
-if input_up y -= 64;
-if input_down y += 64;
-
-//Play UI sounds
-if instance_exists(o_ButtonParent) {
-	if !place_meeting(xprevious,yprevious,o_ButtonParent) && place_meeting(x,y,o_ButtonParent)
-	{
-		audio_play_sound(sndFocusChange,0,0);	
+	switch room {
+		case rm_menu_definicoes:
+			var _yplus = 50; 
+			break;
+		default:
+			var _yplus = 64; 
+			break;
 	}
+	if input_up y -= _yplus;
+	if input_down y += _yplus;
 	
 	//Play UI sounds
-	if !place_meeting(xprevious,yprevious,o_SettingParent) && place_meeting(x,y,o_SettingParent)
-	{
-		audio_play_sound(sndFocusChange,0,0);	
+	if instance_exists(o_ButtonParent) {
+		if !place_meeting(xprevious,yprevious,o_ButtonParent) && place_meeting(x,y,o_ButtonParent)
+		{
+			audio_play_sound(sndFocusChange,0,0);	
+		}
+		
+		//Play UI sounds
+		if !place_meeting(xprevious,yprevious,o_SettingParent) && place_meeting(x,y,o_SettingParent)
+		{
+			audio_play_sound(sndFocusChange,0,0);	
+		}
 	}
-}
 }

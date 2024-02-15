@@ -15,7 +15,7 @@ function Inputs(){
 	global.key_down_released = keyboard_check_released(ord("S")) || keyboard_check_released(vk_down) || gamepad_button_check_released(0,gp_padd);
 	global.key_jump	= keyboard_check_pressed(ord("W")) || keyboard_check_pressed(vk_up) || gamepad_button_check_pressed(0,gp_face1);
 	global.key_airjump = keyboard_check_pressed(ord("W")) || keyboard_check_pressed(vk_up) || gamepad_button_check_pressed(0,gp_face1);
-	global.key_attack = mouse_check_button(mb_left) || keyboard_check(ord("L")) || keyboard_check(ord("Z")) || gamepad_button_check(0,gp_face2);
+	global.key_attack = mouse_check_button(mb_left) || keyboard_check(ord("L")) || keyboard_check(ord("Z")) || gamepad_button_check(0,gp_shoulderr);
 	global.key_long_attack = mouse_check_button_pressed(mb_right) || keyboard_check_pressed(ord("K")) || keyboard_check_pressed(ord("X")) || gamepad_button_check_pressed(0,gp_face3);
 	
 	global.key_up_menu = keyboard_check_pressed(ord("W")) || keyboard_check_pressed(vk_up) || gamepad_button_check_pressed(0,gp_padu);

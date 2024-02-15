@@ -49,4 +49,40 @@ if room < rm_level1 && room >=3 {
 		}
 		break;
 	}
+} else {
+	switch global.input
+	{
+		//Keyboard active
+		case -2:
+		o_mira.visible = false;
+		if mouse_check_button_pressed(mb_any) global.input = -1;
+		else if scrGamepadAnyButtonPressed() > -1 global.input = i;
+		break;
+		
+		//Mouse active
+		case -1:
+		o_mira.visible = true;
+		if keyboard_check_pressed(vk_anykey) 
+		{
+			global.input = -2;
+		}
+		else if scrGamepadAnyButtonPressed() > -1 
+		{
+			global.input = i;
+		}
+		break;
+		
+		//Gamepad active
+		default:
+		o_mira.visible = false;
+		if mouse_check_button_pressed(mb_any) 
+		{
+			global.input = -1;
+		}
+		if keyboard_check_pressed(vk_anykey) 
+		{
+			global.input = -2;
+		}
+		break;
+	}
 }

@@ -1,9 +1,9 @@
-if place_meeting(x,y,o_mira) && o_mira.input_left && setting < max_setting
+if place_meeting(x,y,o_mira) && o_mira.input_right && setting < max_setting
 {
 	audio_play_sound(sndValueChange,0,0);
 	setting++;
 }
-if place_meeting(x,y,o_mira) && o_mira.input_right && setting > min_setting
+if place_meeting(x,y,o_mira) && o_mira.input_left && setting > min_setting
 {
 	audio_play_sound(sndValueChange,0,0);
 	setting--;
