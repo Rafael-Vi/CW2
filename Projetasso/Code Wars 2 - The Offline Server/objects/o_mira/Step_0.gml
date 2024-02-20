@@ -31,7 +31,7 @@ if instance_exists(o_avelino) {
 			var _yplus = 50; 
 			break;
 		default:
-			var _yplus = 64; 
+			var _yplus = 22; 
 			break;
 	}
 	if input_up y -= _yplus;

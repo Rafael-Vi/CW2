@@ -12,10 +12,11 @@ if place_meeting(x,y,o_mira) && mouse_check_button_released(mb_left) {
 		}
 	}
 	if (confirmar) {	
-		confirmar = false;
 		audio_play_sound(a_menu_music,0,true);
 		room_goto(rm_main_menu);
 	} else {
-		show_message("Nome ou palavra-passe incorretos");
+		with instance_create_depth(o_textBox.x,o_textBox.y,depth-1,o_warnBox) {
+			text = "Nome ou palavra-passe incorretos";
+		}
 	}
 }
