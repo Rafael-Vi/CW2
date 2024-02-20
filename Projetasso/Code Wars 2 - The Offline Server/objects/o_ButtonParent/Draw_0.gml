@@ -1,4 +1,4 @@
-draw_sprite_ext(sprite_index,image_index,x,y,1,1,0,c_white,1);
+if (room != rm_main_menu)draw_sprite_ext(sprite_index,image_index,x,y,1,1,0,c_white,1);
 display_set_gui_size(room_width,room_height);
 
 draw_set_alpha(1);

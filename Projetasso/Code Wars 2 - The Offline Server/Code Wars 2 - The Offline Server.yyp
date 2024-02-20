@@ -75,6 +75,7 @@
     {"id":{"name":"rm_menu_definicoes","path":"rooms/rm_menu_definicoes/rm_menu_definicoes.yy",},},
     {"id":{"name":"FirebaseREST_Firestore_jsonDecode","path":"scripts/FirebaseREST_Firestore_jsonDecode/FirebaseREST_Firestore_jsonDecode.yy",},},
     {"id":{"name":"sndFocusChange","path":"sounds/sndFocusChange/sndFocusChange.yy",},},
+    {"id":{"name":"s_menu","path":"sprites/s_menu/s_menu.yy",},},
     {"id":{"name":"o_FirebaseREST_Listener_Firestore","path":"objects/o_FirebaseREST_Listener_Firestore/o_FirebaseREST_Listener_Firestore.yy",},},
     {"id":{"name":"s_pixel","path":"sprites/s_pixel/s_pixel.yy",},},
     {"id":{"name":"o_enemy_parent","path":"objects/o_enemy_parent/o_enemy_parent.yy",},},
