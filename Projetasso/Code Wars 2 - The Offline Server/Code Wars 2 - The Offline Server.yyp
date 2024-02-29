@@ -54,7 +54,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.11.1.129",
+    "IDEVersion": "2023.8.2.108",
   },
   "resources": [
     {"id":{"name":"coracao_V2_MortoAn","path":"sprites/coracao_V2_MortoAn/coracao_V2_MortoAn.yy",},},
@@ -106,6 +106,7 @@
     {"id":{"name":"FirebasePathsUserFunctions","path":"scripts/FirebasePathsUserFunctions/FirebasePathsUserFunctions.yy",},},
     {"id":{"name":"font_title","path":"fonts/font_title/font_title.yy",},},
     {"id":{"name":"drawReset","path":"scripts/drawReset/drawReset.yy",},},
+    {"id":{"name":"o_fundo_menu","path":"objects/o_fundo_menu/o_fundo_menu.yy",},},
     {"id":{"name":"o_FirebaseREST_Listener_On_Firestore","path":"objects/o_FirebaseREST_Listener_On_Firestore/o_FirebaseREST_Listener_On_Firestore.yy",},},
     {"id":{"name":"s_background","path":"sprites/s_background/s_background.yy",},},
     {"id":{"name":"rm_menu_login","path":"rooms/rm_menu_login/rm_menu_login.yy",},},

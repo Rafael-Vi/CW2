@@ -74,6 +74,7 @@
     {"name":"s_summoner","order":3,"path":"sprites/s_summoner/s_summoner.yy",},
     {"name":"font_title","order":4,"path":"fonts/font_title/font_title.yy",},
     {"name":"drawReset","order":3,"path":"scripts/drawReset/drawReset.yy",},
+    {"name":"o_fundo_menu","order":11,"path":"objects/o_fundo_menu/o_fundo_menu.yy",},
     {"name":"o_FirebaseREST_Listener_On_Firestore","order":1,"path":"objects/o_FirebaseREST_Listener_On_Firestore/o_FirebaseREST_Listener_On_Firestore.yy",},
     {"name":"s_background","order":10,"path":"sprites/s_background/s_background.yy",},
     {"name":"rm_menu_login","order":5,"path":"rooms/rm_menu_login/rm_menu_login.yy",},

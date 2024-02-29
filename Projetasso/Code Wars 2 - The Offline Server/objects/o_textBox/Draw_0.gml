@@ -6,7 +6,11 @@ if selected {
 	draw_text_color(x+8,y,text,selCol,selCol,selCol,selCol,1)
 } else {
 	draw_sprite_ext(s_textBox,0,x,y,image_xscale,image_yscale,0,c_gray,1);
-	draw_text_color(x+8,y,text,notSelcol,notSelcol,notSelcol,notSelcol,1);
+	if (text == "") {
+		draw_text_color(x+8,y,text_ini,notSelcol,notSelcol,notSelcol,notSelcol,1);
+	} else {
+		draw_text_color(x+8,y,text,notSelcol,notSelcol,notSelcol,notSelcol,1);
+	}
 }
 draw_set_halign(fa_right);
 draw_text(x-5,y,"Nome:");
