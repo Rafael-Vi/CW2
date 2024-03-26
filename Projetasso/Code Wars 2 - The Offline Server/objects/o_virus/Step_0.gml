@@ -1,4 +1,8 @@
 if (place_meeting(x,y,o_avelino)) {
+	image_speed = 1;
+}
+if (image_speed == 0)image_angle = point_direction(x,y,o_avelino.x,o_avelino.y)+90;
+if animationEnd() {
 	instance_destroy();
 }
 if (hsp != 0) image_xscale = sign(hsp);
@@ -22,7 +26,7 @@ if place_meeting(x + hsp,y,o_wall) {
 x += hsp;
 
 if (instance_exists(o_avelino)) {
-	if (abs(x-o_avelino.x) > 3 || abs(y-o_avelino.y) > 3) {
+	if (image_speed == 0) {
 		hsp = lengthdir_x(spd, point_direction(x,y,o_avelino.x,o_avelino.y));
 		vsp = lengthdir_y(spd, point_direction(x,y,o_avelino.x,o_avelino.y));
 	} else {

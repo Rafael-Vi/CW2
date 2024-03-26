@@ -32,8 +32,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "s_placeholder",
-    "path": "sprites/s_placeholder/s_placeholder.yy",
+    "name": "s_virus",
+    "path": "sprites/s_virus/s_virus.yy",
   },
   "spriteMaskId": null,
   "visible": true,
