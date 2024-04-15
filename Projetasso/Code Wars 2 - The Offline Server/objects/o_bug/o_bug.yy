@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Inimigos",
-    "path": "folders/Objetos/Inimigos.yy",
+    "name": "mundo1",
+    "path": "folders/Objetos/Inimigos/mundo1.yy",
   },
   "parentObjectId": {
     "name": "o_enemy_parent",

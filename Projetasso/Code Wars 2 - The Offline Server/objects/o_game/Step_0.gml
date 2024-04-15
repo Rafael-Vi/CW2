@@ -1,4 +1,4 @@
-Inputs();
+inputs();
 
 audio_group_set_gain(audiogroup_sounds,global.master_volume/10*(global.sounds_volume/10),0);
 audio_group_set_gain(audiogroup_music,global.master_volume/10*(global.music_volume/10),0);
