@@ -1,3 +1,3 @@
 event_inherited();
 image_speed = 0;
-spd = 4;
+spd = 2.5;

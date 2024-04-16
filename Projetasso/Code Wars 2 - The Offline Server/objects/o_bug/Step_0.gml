@@ -1,5 +1,4 @@
 if (hsp != 0) image_xscale = sign(hsp);
-image_angle = point_direction(x,y,o_avelino.x,o_avelino.y)+90;
 if place_meeting(x, y + vsp,o_wall) {
 	while(!place_meeting(x, y + sign(vsp), o_wall)) {
 		y = y + sign(vsp);

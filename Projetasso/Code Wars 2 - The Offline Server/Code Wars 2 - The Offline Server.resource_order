@@ -21,6 +21,7 @@
     {"name":"Linhas do tempo","order":8,"path":"folders/Linhas do tempo.yy",},
     {"name":"Objetos","order":9,"path":"folders/Objetos.yy",},
     {"name":"Inimigos","order":8,"path":"folders/Objetos/Inimigos.yy",},
+    {"name":"mundo1","order":9,"path":"folders/Objetos/Inimigos/mundo1.yy",},
     {"name":"Menu","order":9,"path":"folders/Objetos/Menu.yy",},
     {"name":"Buttons","order":10,"path":"folders/Objetos/Menu/Buttons.yy",},
     {"name":"Settings","order":9,"path":"folders/Objetos/Menu/Settings.yy",},
@@ -33,7 +34,6 @@
     {"name":"Sons","order":3,"path":"folders/Sons.yy",},
     {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
     {"name":"inimigos","order":8,"path":"folders/Sprites/inimigos.yy",},
-    {"name":"mundo1","order":9,"path":"folders/Objetos/Inimigos/mundo1.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"s_coracao_parte2","order":14,"path":"sprites/s_coracao_parte2/s_coracao_parte2.yy",},

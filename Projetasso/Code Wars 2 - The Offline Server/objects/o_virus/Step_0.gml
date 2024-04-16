@@ -1,7 +1,6 @@
 if (place_meeting(x,y,o_avelino)) {
 	image_speed = 1;
 }
-if (image_speed == 0)image_angle = point_direction(x,y,o_avelino.x,o_avelino.y)+90;
 if animationEnd() {
 	instance_destroy();
 }

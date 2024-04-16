@@ -35,6 +35,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Linhas do tempo","folderPath":"folders/Linhas do tempo.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Objetos","folderPath":"folders/Objetos.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Inimigos","folderPath":"folders/Objetos/Inimigos.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"mundo1","folderPath":"folders/Objetos/Inimigos/mundo1.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Menu","folderPath":"folders/Objetos/Menu.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Buttons","folderPath":"folders/Objetos/Menu/Buttons.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Settings","folderPath":"folders/Objetos/Menu/Settings.yy",},
@@ -47,7 +48,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Sons","folderPath":"folders/Sons.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Sprites","folderPath":"folders/Sprites.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"inimigos","folderPath":"folders/Sprites/inimigos.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"mundo1","folderPath":"folders/Objetos/Inimigos/mundo1.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"localization.ini","CopyToMask":-1,"filePath":"datafiles",},
