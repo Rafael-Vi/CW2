@@ -7,7 +7,7 @@ global.interface_volume = 10;
 global.input = -1;
 gamepad_set_axis_deadzone(0,0.09);
 
-Inputs();
+inputs();
 window_set_cursor(cr_none);
 if (room == rm_boot) {
 	room_goto(rm_menu_login);	

@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Inimigos",
-    "path": "folders/Objetos/Inimigos.yy",
+    "name": "mundo1",
+    "path": "folders/Objetos/Inimigos/mundo1.yy",
   },
   "parentObjectId": {
     "name": "o_enemy_parent",
@@ -32,8 +32,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "s_placeholder",
-    "path": "sprites/s_placeholder/s_placeholder.yy",
+    "name": "s_glitch",
+    "path": "sprites/s_glitch/s_glitch.yy",
   },
   "spriteMaskId": null,
   "visible": true,
