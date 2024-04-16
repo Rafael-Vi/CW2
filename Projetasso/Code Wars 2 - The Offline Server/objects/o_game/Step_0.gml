@@ -54,3 +54,7 @@ if room >=3 {
 		}
 	}
 }
+
+if layer_exists("Wall") {
+	layer_set_visible(layer_get_id("Wall"),false);
+}
