@@ -1,21 +1,4 @@
-if (hsp != 0) image_xscale = sign(hsp);
-if place_meeting(x, y + vsp,o_wall) {
-	while(!place_meeting(x, y + sign(vsp), o_wall)) {
-		y = y + sign(vsp);
-	}
-	vsp = 0;
-}	
-
-y += vsp;
-	
-if place_meeting(x + hsp,y,o_wall) {
-	while(!place_meeting(x + sign(hsp), y, o_wall)) {
-		x = x + sign(hsp);
-	}	
-	hsp = 0;
-}	
-
-x += hsp;
+collision();
 
 if hp <= 0 {
 	instance_destroy();
@@ -33,14 +16,59 @@ if shooting {
 		shooting = false;
 	}
 } else {
-	if (distance_to_object(o_avelino) > 3) {
-		hsp = lengthdir_x(spd, point_direction(x,y,o_avelino.x,o_avelino.y));
-		vsp = lengthdir_y(spd, point_direction(x,y,o_avelino.x,o_avelino.y));
-	} else {
-		hsp = 0;
-		vsp = 0;
+	var _hdistance = abs(x-o_avelino.x);
+	var _vdistance = abs(y-o_avelino.y);
+	var _hsp = sign(o_avelino.x-x) * spd;
+	var _vsp = sign(o_avelino.y-y) * spd;
+	//if collision_line(x,y,o_avelino.x,y,o_wall,false,false) {
+	//	going = 5;
+	//	if collision_line(x,y,x,o_avelino.y,o_wall,false,false) {
+	//		going = 3;
+	//	}
+	//} else {
+	//	if collision_line(x,y,x,o_avelino.y,o_wall,false,false) {
+	//		going = 4;
+	//	} else {
+			if !going {
+				if _hdistance > _vdistance {
+					going = 1;
+				} else {
+					going = 2;
+				}
+			}
+	//	}
+	//}
+	switch (going) {
+		case 1:
+		case 4:
+			if _hdistance <= 100 && going != 4 {
+				going = 0;
+			} else {
+				hsp = _hsp;
+				vsp = 0;
+			}
+			break;
+		case 2:
+		case 5:
+			if _vdistance <= 100 && going != 5 {
+				going = 0;
+			} else {
+				hsp = 0;
+				vsp = _vsp;
+			}
+			break;
+		case 3:
+			hsp = _hsp;
+			vsp = _vsp;
+			if (distance_to_object(o_avelino) <= 100) going = 0;
+			break;
+		default:
+			hsp = 0;
+			vsp = 0;
+			break;
 	}
+	
 	if distance_to_object(o_avelino) < 100 {
-	shooting = true;
-}
+		shooting = true;
+	}
 }

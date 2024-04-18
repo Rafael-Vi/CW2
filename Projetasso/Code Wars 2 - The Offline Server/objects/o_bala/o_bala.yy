@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "s_bala",
-    "path": "sprites/s_bala/s_bala.yy",
+    "name": "s_bala_joltaca",
+    "path": "sprites/s_bala_joltaca/s_bala_joltaca.yy",
   },
   "spriteMaskId": null,
   "visible": true,

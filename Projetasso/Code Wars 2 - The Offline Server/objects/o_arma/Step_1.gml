@@ -1,5 +1,5 @@
 x = o_avelino.x + o_avelino.hsp;
-y = o_avelino.y + o_avelino.vsp - 7;
+y = o_avelino.y + o_avelino.vsp - 14;
 image_xscale = o_avelino.image_xscale;
 switch global.input {
 	case 0:

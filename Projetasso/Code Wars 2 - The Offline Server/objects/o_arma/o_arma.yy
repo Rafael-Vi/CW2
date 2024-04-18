@@ -30,8 +30,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "s_avelino_arma",
-    "path": "sprites/s_avelino_arma/s_avelino_arma.yy",
+    "name": "s_joltaca",
+    "path": "sprites/s_joltaca/s_joltaca.yy",
   },
   "spriteMaskId": null,
   "visible": true,

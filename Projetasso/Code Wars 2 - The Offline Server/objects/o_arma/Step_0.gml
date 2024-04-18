@@ -1,5 +1,10 @@
-var _comprimento = 12;
-if bullet_cd <= 0 {
+var _comprimento = 4;
+depth = o_avelino.depth - 10;
+if animationEnd() {
+	image_speed = 0;
+	image_index = image_number - 1;
+}
+if image_index = image_number - 1 {
 	if (global.key_attack) {
 		switch global.input {
 			case 0:
@@ -9,10 +14,12 @@ if bullet_cd <= 0 {
 				var _angle = point_direction(x,y,mouse_x,mouse_y);
 				break;
 		}
-		instance_create_depth(x+_comprimento*cos(degtorad(_angle)),y-_comprimento*sin(degtorad(_angle)),depth-1,o_bala)
+		with instance_create_layer(x+_comprimento*cos(degtorad(_angle)),y-_comprimento*sin(degtorad(_angle)),"Balas",o_bala) {
+			direction = other.image_angle+180*(sign(o_avelino.image_xscale-1));
+			image_angle = direction;
+		}
+		image_speed = 1;
+		image_index = 0;
 	}
-	bullet_cd = 30;
-} else {
-	bullet_cd --;
-}
+} 
 
