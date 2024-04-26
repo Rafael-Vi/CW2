@@ -33,8 +33,8 @@
   "nineSlice": null,
   "origin": 9,
   "parent": {
-    "name": "inimigos",
-    "path": "folders/Sprites/inimigos.yy",
+    "name": "level1",
+    "path": "folders/Sprites/inimigos/level1.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

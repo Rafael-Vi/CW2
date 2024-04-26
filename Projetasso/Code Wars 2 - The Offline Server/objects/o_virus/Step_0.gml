@@ -22,7 +22,3 @@ if (instance_exists(o_avelino)) {
 		}
 	}
 }
-
-if hp <= 0 {
-	instance_destroy();
-}

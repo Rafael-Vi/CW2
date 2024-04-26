@@ -1,7 +1,9 @@
 inputs();
 if instance_exists(o_profundidade) {
 	with o_profundidade {
-		depth = room_height - y;
+		if object_index != o_wall {
+			depth = room_height - y;
+		}
 	}		
 }
 
