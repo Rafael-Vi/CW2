@@ -32,14 +32,18 @@ if bullet > 0 {
 		if (global.key_attack) {
 			switch (arma) {
 				case ARMA.JOLT:
-					max_bullet = 6;
-					bullet_cd = 20;
+					changeGun(s_joltaca,6,20);
 					with instance_create_layer(x + _xOffset, y + _yOffset, "Balas", o_bala) {
 						direction = other.image_angle;
 						image_angle = direction;
 					}
 					break;
 				case ARMA.RJ45:
+					changeGun(s_rj45,6,20);
+					with instance_create_layer(x + _xOffset, y + _yOffset, "Balas", o_bala) {
+						direction = other.image_angle;
+						image_angle = direction;
+					}
 					break;
 			}
 			bullet --;

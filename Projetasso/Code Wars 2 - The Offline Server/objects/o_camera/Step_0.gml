@@ -13,8 +13,8 @@ switch follow {
 			follow_x = round((o_mira.x + o_avelino.x) / 2);
 			follow_y = round((o_mira.y + o_avelino.y) / 2);
 		} else {
-			follow_x = round((o_avelino.x) + lengthdir_x(30,_aimDir));
-			follow_y = round((o_avelino.y) + lengthdir_y(30,_aimDir));
+			follow_x = round((o_avelino.x) + lengthdir_x(15,_aimDir));
+			follow_y = round((o_avelino.y) + lengthdir_y(15,_aimDir));
 		}
 		break;
 	default:

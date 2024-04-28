@@ -61,8 +61,8 @@
   "nineSlice": null,
   "origin": 7,
   "parent": {
-    "name": "Code Wars 2 - The Offline Server",
-    "path": "Code Wars 2 - The Offline Server.yyp",
+    "name": "portas",
+    "path": "folders/Sprites/portas.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

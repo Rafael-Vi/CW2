@@ -1,7 +1,7 @@
 event_inherited();
 name = "Cyber Snow";
 animation = 0;
-full_hp = 50;
+full_hp = 100;
 hp = full_hp;
 bullet_cd = 80;
 shooting = false;

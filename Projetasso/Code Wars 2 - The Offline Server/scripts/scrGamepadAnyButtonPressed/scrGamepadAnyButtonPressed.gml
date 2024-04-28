@@ -4,12 +4,12 @@
 function scrGamepadAnyButtonPressed(){
 	for (i = 0; i <= 11; i++)
 	{
-		if gamepad_button_check_pressed(i,gp_face1) or gamepad_button_check_pressed(i,gp_face2) or 
-		gamepad_button_check_pressed(i,gp_face3) or gamepad_button_check_pressed(i,gp_face4) or
-		gamepad_button_check_pressed(i,gp_padl) or gamepad_button_check_pressed(i,gp_padu) or
-		gamepad_button_check_pressed(i,gp_padr) or gamepad_button_check_pressed(i,gp_padd) or 
-		gamepad_button_check_pressed(i,gp_shoulderl) or gamepad_button_check_pressed(i,gp_shoulderr) or
-		gamepad_button_check_pressed(i,gp_shoulderlb) or gamepad_button_check_pressed(i,gp_shoulderrb)
-		return i;
+		if GamepadAnyKey(i,gamepad_button_check_pressed) {
+			return i;
+		}
 	}
+}
+
+function GamepadAnyKey(slot,tipo_de_check){
+	return (tipo_de_check(slot, gp_face1)||tipo_de_check(slot, gp_face2)||tipo_de_check(slot, gp_face3)||tipo_de_check(slot, gp_face4)||tipo_de_check(slot, gp_shoulderl)||tipo_de_check(slot, gp_shoulderr)||tipo_de_check(slot, gp_shoulderlb)||tipo_de_check(slot, gp_shoulderrb)||tipo_de_check(slot, gp_select)||tipo_de_check(slot, gp_start)||tipo_de_check(slot, gp_padd)||tipo_de_check(slot, gp_padl)||tipo_de_check(slot, gp_padr)||tipo_de_check(slot, gp_face4)||gamepad_axis_value(0,gp_axislh) < 0||gamepad_axis_value(0,gp_axislh) > 0||gamepad_axis_value(0,gp_axislv) < 0||gamepad_axis_value(0,gp_axislv) > 0)
 }

@@ -17,20 +17,19 @@
   "layers": [
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances","depth":20,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":4,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6823D587","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"o_fundo_menu","path":"objects/o_fundo_menu/o_fundo_menu.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":0.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_295D21DC","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"o_title","path":"objects/o_title/o_title.yy",},"properties":[
-            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"o_title","path":"objects/o_title/o_title.yy",},"propertyId":{"name":"title","path":"objects/o_title/o_title.yy",},"value":"Code Wars 2\\nThe Offline Server",},
-          ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":352.0,"y":32.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7D94D638","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"o_ButtonQuit","path":"objects/o_ButtonQuit/o_ButtonQuit.yy",},"properties":[],"rotation":0.0,"scaleX":0.6666667,"scaleY":1.0,"x":224.0,"y":260.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7D94D638","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"o_ButtonQuit","path":"objects/o_ButtonQuit/o_ButtonQuit.yy",},"properties":[],"rotation":0.0,"scaleX":0.6666667,"scaleY":1.0,"x":192.0,"y":236.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_C4F48D2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"o_ButtonParent","path":"objects/o_ButtonParent/o_ButtonParent.yy",},"properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"o_ButtonParent","path":"objects/o_ButtonParent/o_ButtonParent.yy",},"propertyId":{"name":"text","path":"objects/o_ButtonParent/o_ButtonParent.yy",},"value":"Definições",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"o_ButtonParent","path":"objects/o_ButtonParent/o_ButtonParent.yy",},"propertyId":{"name":"target","path":"objects/o_ButtonParent/o_ButtonParent.yy",},"value":"rm_menu_definicoes",},
-          ],"rotation":0.0,"scaleX":0.6666667,"scaleY":1.0,"x":224.0,"y":220.0,},
+          ],"rotation":0.0,"scaleX":0.6666667,"scaleY":1.0,"x":192.0,"y":196.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_491732B0","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"o_ButtonParent","path":"objects/o_ButtonParent/o_ButtonParent.yy",},"properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"o_ButtonParent","path":"objects/o_ButtonParent/o_ButtonParent.yy",},"propertyId":{"name":"target","path":"objects/o_ButtonParent/o_ButtonParent.yy",},"value":"rm_level1",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"o_ButtonParent","path":"objects/o_ButtonParent/o_ButtonParent.yy",},"propertyId":{"name":"text","path":"objects/o_ButtonParent/o_ButtonParent.yy",},"value":"Jogar",},
-          ],"rotation":0.0,"scaleX":0.6666667,"scaleY":1.0,"x":224.0,"y":180.0,},
+          ],"rotation":0.0,"scaleX":0.6666667,"scaleY":1.0,"x":192.0,"y":156.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_295D21DC","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"o_title","path":"objects/o_title/o_title.yy",},"properties":[
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"o_title","path":"objects/o_title/o_title.yy",},"propertyId":{"name":"title","path":"objects/o_title/o_title.yy",},"value":"Code Wars 2\\nThe Offline Server",},
+          ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":320.0,"y":32.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":true,"visible":true,},
-    {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Backgrounds","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":120,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"spriteId":{"name":"s_menu","path":"sprites/s_menu/s_menu.yy",},"stretch":true,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
   "parent": {
     "name": "Cenas",
@@ -45,10 +44,10 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "roomSettings": {
-    "Height": 480,
+    "Height": 360,
     "inheritRoomSettings": false,
     "persistent": false,
-    "Width": 720,
+    "Width": 640,
   },
   "sequenceId": null,
   "views": [
