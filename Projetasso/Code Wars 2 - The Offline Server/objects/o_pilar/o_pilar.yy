@@ -10,8 +10,8 @@
     "path": "folders/Objetos/decor/level1.yy",
   },
   "parentObjectId": {
-    "name": "o_profundidade",
-    "path": "objects/o_profundidade/o_profundidade.yy",
+    "name": "o_wall",
+    "path": "objects/o_wall/o_wall.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,

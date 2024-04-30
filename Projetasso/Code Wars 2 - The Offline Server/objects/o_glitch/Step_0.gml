@@ -11,9 +11,9 @@ if shooting {
 	bullet_cd --;
 	if bullet_cd <= 0 {
 		bullet_cd = 120;
-		createBullet(15);
-		createBullet(-15);
-		createBullet();
+		for (var i = -1; i<2; i++) {
+			createBullet(15*i);
+		}
 	}	
 	if distance_to_object(o_avelino) > 150 {
 		shooting = false;

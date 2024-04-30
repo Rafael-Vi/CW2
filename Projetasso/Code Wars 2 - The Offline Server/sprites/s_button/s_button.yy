@@ -48,8 +48,8 @@
   },
   "origin": 0,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "menu",
+    "path": "folders/Sprites/hud/menu.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

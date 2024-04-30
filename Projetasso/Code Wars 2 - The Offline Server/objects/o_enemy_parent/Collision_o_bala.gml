@@ -1,3 +1,5 @@
 instance_destroy(other);
-hp --;
-dmgcd = 5;
+if hp > 0 {
+	hp --;
+	dmgcd = 5;
+}
