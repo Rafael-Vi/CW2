@@ -2,6 +2,9 @@ switch (state) {
 	case PLAYER.FREE:
 		playerFree();
 		break;
+	case PLAYER.DASH:
+		playerDash();
+		break;
 	case PLAYER.DIALOGUE:
 		sprite_index = s_avelino_fala;
 		angle = 0;

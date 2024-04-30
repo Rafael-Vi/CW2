@@ -10,6 +10,7 @@ angle = 0;
 state = PLAYER.FREE;
 enum PLAYER {
 	FREE,
+	DASH,
 	DIALOGUE
 }
 instance_create_depth(x,y-14,depth-1,o_arma);

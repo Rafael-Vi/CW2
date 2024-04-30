@@ -11,6 +11,7 @@ function playerFree(){
 		
 		if (hsp != 0) image_xscale = sign(hsp);
 		
+		if 
 		collision();
 		
 		if (hsp != 0 || vsp != 0) angle += (abs(hsp)+abs(vsp)); else angle = 0;
@@ -18,6 +19,7 @@ function playerFree(){
 		if (ivccd > 0) {
 			ivccd --;
 		}
+		
 	} else {
 		deathcd --;
 		if !deathcd {
