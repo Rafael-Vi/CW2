@@ -14,7 +14,7 @@ w = string_width(text_current);
 
 switch (state) {
 	case TEXT.DIALOGUE :	if letters >= length - 1 {
-								//if (audio_is_playing(a_big_rosca)) audio_stop_sound(a_big_rosca);
+								if (audio_is_playing(a_ngc)) audio_stop_sound(a_ngc);
 								//if (audio_is_playing(a_sapo_fala)) audio_stop_sound(a_sapo_fala);
 							}
 							if (global.key_action) {

@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "changeGun",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "utility",
-    "path": "folders/Scripts/utility.yy",
+  "$GMScript":"",
+  "%Name":"changeGun",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"changeGun",
+  "parent":{
+    "name":"utility",
+    "path":"folders/Scripts/utility.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

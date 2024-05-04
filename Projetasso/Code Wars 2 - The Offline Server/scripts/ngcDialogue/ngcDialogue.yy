@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"ngcDialogue",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ngcDialogue",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

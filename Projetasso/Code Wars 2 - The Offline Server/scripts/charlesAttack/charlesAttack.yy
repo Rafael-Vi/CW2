@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "charlesAttack",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Charles",
-    "path": "folders/Scripts/Boss/Charles.yy",
+  "$GMScript":"",
+  "%Name":"charlesAttack",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"charlesAttack",
+  "parent":{
+    "name":"Charles",
+    "path":"folders/Scripts/Boss/Charles.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }
