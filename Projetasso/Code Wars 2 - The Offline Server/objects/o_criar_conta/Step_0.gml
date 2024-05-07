@@ -50,7 +50,7 @@ if place_meeting(x,y,o_mira) && mouse_check_button_released(mb_left) {
 			{
 				nome: o_textBox.text,
 				palavrapasse: base64_encode(o_textPassBox.text),
-				sala: rm_level1
+				sala: 5
 			}
 		);
 		FirebaseFirestore(global.root).Set(_doc);

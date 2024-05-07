@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "animationEnd",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "utility",
-    "path": "folders/Scripts/utility.yy",
+  "$GMScript":"",
+  "%Name":"animationEnd",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"animationEnd",
+  "parent":{
+    "name":"utility",
+    "path":"folders/Scripts/utility.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

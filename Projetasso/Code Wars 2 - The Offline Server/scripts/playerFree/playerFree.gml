@@ -11,7 +11,12 @@ function playerFree(){
 		
 		if (hsp != 0) image_xscale = sign(hsp);
 		
-		if 
+		if global.key_dodge && (hsp != 0 || vsp != 0) {
+			hsp *= 1.6;
+			vsp *= 1.6;
+			state = PLAYER.DASH;
+		}
+	
 		collision();
 		
 		if (hsp != 0 || vsp != 0) angle += (abs(hsp)+abs(vsp)); else angle = 0;

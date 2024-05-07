@@ -1,3 +1,6 @@
+if animation != 3 {
+	draw_sprite(s_charles_fogo,current_time/125,x,y-10);	
+}
 event_inherited();
 switch (animation) {
 	case 1:

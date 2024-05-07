@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "getInput",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "utility",
-    "path": "folders/Scripts/utility.yy",
+  "$GMScript":"",
+  "%Name":"getInput",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"getInput",
+  "parent":{
+    "name":"utility",
+    "path":"folders/Scripts/utility.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

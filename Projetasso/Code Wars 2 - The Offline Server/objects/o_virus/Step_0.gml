@@ -1,4 +1,4 @@
-if (place_meeting(x,y,o_avelino)) {
+if (place_meeting(x,y,o_avelino) || hp == 0) {
 	image_speed = 1;
 }
 if animationEnd() {
@@ -17,6 +17,12 @@ if (instance_exists(o_avelino)) {
 		vsp = 0;
 	}
 	if image_index >= 6 {
+		if image_index <= 6 {
+			instance_create_depth(bbox_left,  bbox_top,	   depth-1, o_explosao); 
+			instance_create_depth(bbox_left,  bbox_bottom, depth-1, o_explosao);
+			instance_create_depth(bbox_right, bbox_top,    depth-1, o_explosao);
+			instance_create_depth(bbox_right, bbox_bottom, depth-1, o_explosao);
+		}
 		if place_meeting(x,y,o_avelino) {
 			damagePlayer();
 		}
