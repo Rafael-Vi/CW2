@@ -3,3 +3,4 @@ hp = 1;
 hsp = 0;
 vsp = 0;
 angle = 0;
+alarm[0] = 0;
