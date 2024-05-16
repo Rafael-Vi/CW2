@@ -7,29 +7,32 @@ switch global.input {
 		aimDir = point_direction(0, 0, gamepad_axis_value(0,gp_axisrh), gamepad_axis_value(0,gp_axisrv));
 		break;
 	default:
-		aimDir = point_direction(x,y,mouse_x,mouse_y);
+		aimDir = point_direction(o_avelino.x,o_avelino.y - 20,mouse_x,mouse_y);
 		break;
 }
 
-image_angle = aimDir;
-
-if aimDir > 90 && aimDir < 270 {
-	image_yscale = -1;
-} else {
-	image_yscale = 1;
-}
-
-if animationEnd() {
-	image_speed = 0;
-	image_index = image_number - 1;
-	bullet = max_bullet;
-}
-
-var _xOffset = lengthdir_x(length + dist, aimDir);
-var _yOffset = lengthdir_y(length + dist, aimDir);
-if bullet > 0 {
-	if alarm[0] <= 0 {
-		if (global.key_attack) {
+if o_avelino.hp > 0 && o_avelino.state != PLAYER.DIALOGUE {
+	image_angle = aimDir;
+	
+	if aimDir > 90 && aimDir < 270 {
+		image_yscale = -1;
+	} else {
+		image_yscale = 1;
+	}
+	
+	if animationEnd() {
+		image_speed = 0;
+		image_index = image_number - 1;
+		bullet = max_bullet;
+	}
+	
+	var _xOffset = lengthdir_x(length + dist, aimDir);
+	var _yOffset = lengthdir_y(length + dist, aimDir);
+	if bullet > 0 {
+		if global.key_reload {
+			bullet = 0;
+		}
+		if alarm[0] <= 0 && global.key_attack{
 			switch (arma) {
 				case ARMA.JOLT:
 					changeGun(s_joltaca,6,20);
@@ -49,11 +52,12 @@ if bullet > 0 {
 			bullet --;
 			alarm[0] = bullet_cd
 		}
-	}
-} else {
-	if bullet != -10 {
-		image_index = 0;
-		image_speed = 1;
-		bullet = -10;
+	} else {
+		if bullet != -10 {
+			image_index = 0;
+			image_speed = 1;
+			audio_play_sound(a_reload,0,0);
+			bullet = -10;
+		}
 	}
 }

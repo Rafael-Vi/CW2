@@ -1,7 +1,5 @@
 var multiplierx = camera_get_view_width (view_camera[0]) / 640;
 var multipliery = camera_get_view_height(view_camera[0]) / 360;
-var hDir = global.key_right_rAxis - global.key_left_rAxis;
-var vDir = global.key_up_rAxis    - global.key_down_rAxis;
 switch follow {
 	case o_boss:
 		follow_x = round((o_boss.x + o_avelino.x) / 2 );
@@ -13,8 +11,8 @@ switch follow {
 			follow_x = round((o_mira.x + o_avelino.x) / 2);
 			follow_y = round((o_mira.y + o_avelino.y) / 2);
 		} else {
-			follow_x = round((o_avelino.x) + lengthdir_x(15,_aimDir));
-			follow_y = round((o_avelino.y) + lengthdir_y(15,_aimDir));
+			follow_x = round((o_avelino.x) + lengthdir_x(100,_aimDir));
+			follow_y = round((o_avelino.y) + lengthdir_y(100,_aimDir));
 		}
 		break;
 	default:
@@ -24,12 +22,12 @@ switch follow {
 }
 
 if instance_exists(follow) {
-	if follow == o_avelino && (hDir != 0 || vDir != 0) {
-		xTo = follow_x + display_get_gui_width()  / 2.5 * multiplierx * (hDir/2);
-		yTo = follow_y + display_get_gui_height() / 3   * multiplierx * (vDir/2);
-	} else {
+	if follow == o_avelino {
 		xTo = follow_x;
 		yTo = follow_y - 30 * multipliery;
+	} else {
+		xTo = follow_x;
+		yTo = follow_y;
 	}
 	x += (xTo - x) / 15;
 	y += (yTo - y) / 15;

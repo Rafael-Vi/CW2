@@ -28,6 +28,7 @@
   "physicsStartAwake":true,
   "properties":[
     {"$GMObjectProperty":"v1","%Name":"chain","filters":[],"listItems":[],"multiselect":false,"name":"chain","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":1,},
+    {"$GMObjectProperty":"v1","%Name":"boss","filters":[],"listItems":[],"multiselect":false,"name":"boss","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":3,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

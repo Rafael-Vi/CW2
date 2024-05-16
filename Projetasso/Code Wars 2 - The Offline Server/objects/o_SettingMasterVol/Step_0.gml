@@ -11,4 +11,4 @@
 
 // Inherit the parent event
 event_inherited();
-global.master_volume = setting;
+global.playerInfo.som_geral = setting;

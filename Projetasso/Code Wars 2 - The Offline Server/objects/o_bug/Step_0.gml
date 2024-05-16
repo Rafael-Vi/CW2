@@ -9,10 +9,14 @@ if shooting {
 	vsp = 0;
 	bullet_cd --;
 	if bullet_cd <= 0 {
-		bullet_cd = 120;
-		createBullet();
+		animationStart(s_bug_tiro);
+		if animationEnd() && sprite_index == s_bug_tiro {
+			bullet_cd = 120;
+			sprite_index = s_bug;
+			createBullet();
+		}
 	}	
-	if distance_to_object(o_avelino) > 150 {
+	if distance_to_object(o_avelino) > 150 && sprite_index != s_bug_tiro {
 		shooting = false;
 	}
 } else {

@@ -4,5 +4,6 @@ function damagePlayer(){
 	if o_avelino.ivccd <= 0 && o_avelino.state == PLAYER.FREE {
 		o_avelino.ivccd = 60;
 		o_avelino.hp --;
+		audio_play_sound(a_dano,0,0);
 	}
 }

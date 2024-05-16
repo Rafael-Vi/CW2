@@ -2,14 +2,16 @@ inputs();
 if instance_exists(o_profundidade) {
 	with o_profundidade {
 		if object_index != o_wall {
-			depth = room_height - y;
+			depth = room_height - y + 200;
 		}
 	}		
 }
 
-audio_group_set_gain(audiogroup_sounds,global.master_volume/10*(global.sounds_volume/10),0);
-audio_group_set_gain(audiogroup_music,global.master_volume/10*(global.music_volume/10),0);
-audio_group_set_gain(audiogroup_ui,global.master_volume/10*(global.interface_volume/10),0);
+if room >= rm_main_menu {
+	audio_group_set_gain(audiogroup_sounds,global.playerInfo.som_geral/10*(global.playerInfo.som_efeitos/10),0);
+	audio_group_set_gain(audiogroup_music,global.playerInfo.som_geral/10*(global.playerInfo.som_musica/10),0);
+	audio_group_set_gain(audiogroup_ui,global.playerInfo.som_geral/10*(global.playerInfo.som_ui/10),0);
+}
 	
 //Detect input device change
 if room >=3 {

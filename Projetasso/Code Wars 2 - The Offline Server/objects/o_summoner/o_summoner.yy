@@ -11,8 +11,8 @@
   "name":"o_summoner",
   "overriddenProperties":[],
   "parent":{
-    "name":"Inimigos",
-    "path":"folders/Objetos/Inimigos.yy",
+    "name":"outros",
+    "path":"folders/Objetos/Inimigos/outros.yy",
   },
   "parentObjectId":{
     "name":"o_enemy_parent",

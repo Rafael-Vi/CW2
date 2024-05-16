@@ -1,0 +1,1 @@
+createBullet(,,,y-10);

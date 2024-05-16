@@ -15,15 +15,14 @@ w = string_width(text_current);
 switch (state) {
 	case TEXT.DIALOGUE :	if letters >= length - 1 {
 								if (audio_is_playing(a_ngc)) audio_stop_sound(a_ngc);
-								//if (audio_is_playing(a_sapo_fala)) audio_stop_sound(a_sapo_fala);
+								if (audio_is_playing(a_azel)) audio_stop_sound(a_azel);
 							}
 							if (global.key_action) {
 								if letters < length {
 									letters = length;
 								} else {
 									instance_destroy();
-									o_text_parent.showing_text = false;
-									with (o_camera) follow = o_avelino;															
+									o_text_parent.showing_text = false;														
 									if (o_ngc.dialogue >= 0) o_ngc.dialogue ++;
 								
 							}	break;

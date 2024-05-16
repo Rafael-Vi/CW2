@@ -14,6 +14,10 @@ var faceY = y2 + 15;
 var textY = y2 + 15;
 
 draw_sprite_ext(s_dialogue_border,0, x2, y2, 1, 3, 0, c_white, 1);
-draw_sprite_ext(sprite_face,0, faceX, faceY, faceScale, faceScale, 0, c_white, 1);
+if letters < length {
+	draw_sprite_ext(sprite_face,creator.image_index, faceX, faceY, faceScale, faceScale, 0, c_white, 1);
+} else {
+	draw_sprite_ext(sprite_face,0, faceX, faceY, faceScale, faceScale, 0, c_white, 1);
+}
 
 draw_text(textX,textY,text_current);

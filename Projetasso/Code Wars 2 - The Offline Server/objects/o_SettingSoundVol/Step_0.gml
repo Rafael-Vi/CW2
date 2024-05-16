@@ -11,4 +11,4 @@
 
 // Inherit the parent event
 event_inherited();
-global.sounds_volume = setting;
+global.playerInfo.som_efeitos = setting;

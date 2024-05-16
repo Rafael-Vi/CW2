@@ -1,5 +1,6 @@
 y += vsp;
 vsp += grv;
+image_angle += 20;
 switch state {
 	case 0:
 		vsp = -10;
@@ -11,7 +12,6 @@ switch state {
 		}
 		break;
 	case 1:
-	image_yscale = -1;
 		if y >= y_fin {
 			instance_destroy();
 		}

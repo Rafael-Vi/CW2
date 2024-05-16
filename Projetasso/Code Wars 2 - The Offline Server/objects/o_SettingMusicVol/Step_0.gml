@@ -5,4 +5,4 @@
 
 // Inherit the parent event
 event_inherited();
-global.music_volume = setting;
+global.playerInfo.som_musica = setting;

@@ -12,10 +12,12 @@
     {"name":"inst_13E57821","path":"rooms/rm_menu_definicoes/rm_menu_definicoes.yy",},
     {"name":"inst_170D70CD","path":"rooms/rm_menu_definicoes/rm_menu_definicoes.yy",},
     {"name":"inst_18FEA5A0","path":"rooms/rm_menu_definicoes/rm_menu_definicoes.yy",},
+    {"name":"inst_394383BC","path":"rooms/rm_menu_definicoes/rm_menu_definicoes.yy",},
   ],
   "isDnd":false,
   "layers":[
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":20,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":4,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
+        {"$GMRInstance":"","%Name":"inst_394383BC","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_394383BC","objectId":{"name":"o_fundo_menu","path":"objects/o_fundo_menu/o_fundo_menu.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":0.0,},
         {"$GMRInstance":"","%Name":"inst_15BC4855","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_15BC4855","objectId":{"name":"o_title","path":"objects/o_title/o_title.yy",},"properties":[
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"o_title","path":"objects/o_title/o_title.yy",},"propertyId":{"name":"title","path":"objects/o_title/o_title.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Definições",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":320.0,"y":32.0,},
@@ -28,7 +30,6 @@
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"o_ButtonParent","path":"objects/o_ButtonParent/o_ButtonParent.yy",},"propertyId":{"name":"text","path":"objects/o_ButtonParent/o_ButtonParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Voltar",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":128.0,"y":296.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":true,"visible":true,},
-    {"$GMRBackgroundLayer":"","%Name":"Backgrounds","animationFPS":0.0,"animationSpeedType":0,"colour":4294967295,"depth":120,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Backgrounds","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":{"name":"s_menu","path":"sprites/s_menu/s_menu.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
   "name":"rm_menu_definicoes",
   "parent":{

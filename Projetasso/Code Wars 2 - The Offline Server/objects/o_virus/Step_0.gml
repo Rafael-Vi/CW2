@@ -22,6 +22,7 @@ if (instance_exists(o_avelino)) {
 			instance_create_depth(bbox_left,  bbox_bottom, depth-1, o_explosao);
 			instance_create_depth(bbox_right, bbox_top,    depth-1, o_explosao);
 			instance_create_depth(bbox_right, bbox_bottom, depth-1, o_explosao);
+			audio_play_sound(a_virus,0,0);
 		}
 		if place_meeting(x,y,o_avelino) {
 			damagePlayer();

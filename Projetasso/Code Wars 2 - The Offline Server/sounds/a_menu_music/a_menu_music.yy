@@ -12,8 +12,8 @@
   "duration":24.633469,
   "name":"a_menu_music",
   "parent":{
-    "name":"Sons",
-    "path":"folders/Sons.yy",
+    "name":"musica",
+    "path":"folders/Sons/musica.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

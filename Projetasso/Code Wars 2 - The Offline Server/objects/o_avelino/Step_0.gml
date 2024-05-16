@@ -6,8 +6,8 @@ switch (state) {
 		playerDash();
 		break;
 	case PLAYER.DIALOGUE:
-		sprite_index = s_avelino_fala;
 		angle = 0;
+		sprite_index = s_avelino;
 		if showing_text = true {
 			image_speed = 1;
 		} else {

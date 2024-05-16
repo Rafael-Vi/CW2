@@ -7,6 +7,7 @@ function createText(obj = id){
 			text = other.text;
 			font = f_default;
 			length = string_length(text);
+			creator = other.object_index;
 			other.showing_text = true;
 			state = TEXT.DIALOGUE;
 		}	

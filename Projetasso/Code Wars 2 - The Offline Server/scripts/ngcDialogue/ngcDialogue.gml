@@ -25,7 +25,7 @@ function ngcDialogue(){
 		
 			text_[0	,0] = "Olá...";
 			text_[1	,0] = "Não há tempo para apresentações.\nVou te explicar como é que as coisas funcionam aqui";
-			text_[2	,0] = "Segue-me até à próxima sala...";
+			text_[2	,0] = "Se clicares no [TAB] podes ver o mapa em grande.\n Aquele ponto verde sou eu :)\nSegue-me até à próxima sala...";
 			text_[3	,0] = "";
 			text_[4	,0] = "Se conseguiste chegar a esta sala, suponho que já saibas como andar,\nmas será que sabes te desviar?";
 			text_[5	,0] = "Pressiona no botão [SHIFT] para te desviares";
@@ -35,7 +35,7 @@ function ngcDialogue(){
 			text_[9	,0] = "Oh :(";
 			text_[10,0] = "Vá não fiques triste, segue-me até à próxima sala para aprender a disparar";
 			text_[11,0] = "";
-			text_[12,0] = "Vais encontrar vários inimigos na tua jornada... para disparar neles pressiona\n o [BOTÃO ESQUERDO] do teu rato para destruir esse boneco";	
+			text_[12,0] = "Vais encontrar vários inimigos na tua jornada... para disparar neles pressiona\n o [BOTÃO ESQUERDO] do teu rato para destruir esse boneco\ne no [R] para recarregar as balas";	
 			text_[13,0] = "";			
 			text_[14,0] = "Ok acho que estás pronto, quando passares por aquela porta\n vão aparecer inimigos";	
 			text_[15,0] = "Utiliza as ferramentas que te dei e derrota-os";
@@ -102,7 +102,7 @@ function ngcDialogue(){
 				with o_avelino {
 					createText();
 				}
-				//if (!audio_is_playing(a_sapo_fala)) audio_play_sound(a_sapo_fala, 1000, true);
+				if (!audio_is_playing(a_azel)) audio_play_sound(a_azel, 1000, true);
 				break;
 		}
 	} else {
@@ -111,12 +111,14 @@ function ngcDialogue(){
 				x = 1272;
 				y = 936;
 				o_avelino.state = PLAYER.FREE;
+				with (o_camera) follow = o_avelino;	
 				talking = false;
 				break;
 			case 6:
 				with o_avelino {
 					if (state == PLAYER.DIALOGUE) {
 						state = PLAYER.FREE;
+						with (o_camera) follow = o_avelino;	
 					}
 					if state == PLAYER.DASH {
 						if image_number - image_index < 2 && sprite_index == s_avelino_dash {
@@ -129,6 +131,7 @@ function ngcDialogue(){
 				x = 1272;
 				y = 568;
 				o_avelino.state = PLAYER.FREE;
+				with (o_camera) follow = o_avelino;	
 				talking = false;
 				break;
 			case 13:
@@ -143,6 +146,7 @@ function ngcDialogue(){
 				break;
 			default:
 				o_avelino.state = PLAYER.FREE;
+				with (o_camera) follow = o_avelino;	
 				instance_destroy();
 				break;
 		}

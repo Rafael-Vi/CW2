@@ -8,6 +8,9 @@ if ativo {
 		} else {
 			hsp = lengthdir_x(spd, point_direction(x,y,o_avelino.x,o_avelino.y));
 			vsp = lengthdir_y(spd, point_direction(x,y,o_avelino.x,o_avelino.y));
+			if drill > 0 {
+				drill -= 0.15;
+			}
 			animation = 0;
 		}
 		collision();

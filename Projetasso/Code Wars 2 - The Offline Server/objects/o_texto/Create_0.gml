@@ -8,6 +8,7 @@ w = 0;
 he = 0;
 state = TEXT.SIGN;
 sprite_face = s_avelino_chat;
+creator = self;
 
 enum TEXT {
 	SIGN,

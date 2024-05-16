@@ -1,10 +1,12 @@
 global.playerInfo = [];
 global.root = "utilizadores";
-global.master_volume	= 10;
-global.sounds_volume	= 10;
-global.music_volume		= 10;
-global.interface_volume = 10;
 global.input = -1;
+global.offline = false;
+
+minimap_side = sprite_get_width(s_minimapa1);
+room_side = room_width;
+minimap_surface = surface_create(minimap_side, minimap_side);
+
 gamepad_set_axis_deadzone(0,0.09);
 
 inputs();

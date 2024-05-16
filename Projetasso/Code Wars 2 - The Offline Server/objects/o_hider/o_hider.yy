@@ -2,6 +2,7 @@
   "$GMObject":"",
   "%Name":"o_hider",
   "eventList":[
+    {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"o_enemy_spawner","path":"objects/o_enemy_spawner/o_enemy_spawner.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"o_avelino","path":"objects/o_avelino/o_avelino.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,

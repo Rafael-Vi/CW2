@@ -1,4 +1,4 @@
 event_inherited();
 min_setting = 0;
 max_setting = 10;
-setting = global.interface_volume;
+setting = global.playerInfo.som_ui;

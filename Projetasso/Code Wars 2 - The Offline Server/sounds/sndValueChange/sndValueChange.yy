@@ -12,8 +12,8 @@
   "duration":0.105,
   "name":"sndValueChange",
   "parent":{
-    "name":"Sons",
-    "path":"folders/Sons.yy",
+    "name":"menu",
+    "path":"folders/Sons/menu.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

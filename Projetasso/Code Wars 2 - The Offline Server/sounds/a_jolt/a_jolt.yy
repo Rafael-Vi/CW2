@@ -12,8 +12,8 @@
   "duration":1.044898,
   "name":"a_jolt",
   "parent":{
-    "name":"Sons",
-    "path":"folders/Sons.yy",
+    "name":"sfx",
+    "path":"folders/Sons/sfx.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

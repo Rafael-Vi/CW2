@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"a_azel",
+  "audioGroupId":{
+    "name":"audiogroup_sounds",
+    "path":"audiogroups/audiogroup_sounds",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":1.776327,
+  "name":"a_azel",
+  "parent":{
+    "name":"sfx",
+    "path":"folders/Sons/sfx.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"a_azel.mp3",
+  "type":0,
+  "volume":1.0,
+}

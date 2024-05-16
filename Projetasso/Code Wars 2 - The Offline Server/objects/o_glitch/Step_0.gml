@@ -10,12 +10,17 @@ if shooting {
 	vsp = 0;
 	bullet_cd --;
 	if bullet_cd <= 0 {
-		bullet_cd = 120;
-		for (var i = -1; i<2; i++) {
-			createBullet(15*i);
+		animationStart(s_glitch_tiro);
+		if (animationEnd() && sprite_index == s_glitch_tiro) {
+			bullet_cd = 120;
+			sprite_index = s_glitch;
+			audio_play_sound(a_glitch,0,0);
+			for (var i = -1; i<2; i++) {
+				createBullet(15*i);
+			}
 		}
 	}	
-	if distance_to_object(o_avelino) > 150 {
+	if distance_to_object(o_avelino) > 150 && sprite_index != s_glitch_tiro{
 		shooting = false;
 	}
 } else {
@@ -27,6 +32,6 @@ if shooting {
 		vsp = 0;
 	}
 	if distance_to_object(o_avelino) < 100 {
-	shooting = true;
-}
+		shooting = true;
+	}
 }

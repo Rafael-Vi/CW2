@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"s_bala_joltaca",
-    "path":"sprites/s_bala_joltaca/s_bala_joltaca.yy",
+    "name":"s_joltaca_bala",
+    "path":"sprites/s_joltaca_bala/s_joltaca_bala.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"s_bug",
-    "path":"sprites/s_bug/s_bug.yy",
+    "name":"s_bug_tiro",
+    "path":"sprites/s_bug_tiro/s_bug_tiro.yy",
   },
   "spriteMaskId":null,
   "visible":true,

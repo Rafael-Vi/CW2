@@ -63,8 +63,10 @@ function Unstuck(vspd = vsp,objeto_a_colidir = o_wall){
 function collision(){
 	collisionBase();
 	Unstuck();
-	if instance_nearest(x,y,o_porta).image_index < instance_nearest(x,y,o_porta).image_number-1 {
-		collisionBase(instance_nearest(x,y,o_porta));
+	if instance_exists(o_porta) {
+		if instance_nearest(x,y,o_porta).image_index < instance_nearest(x,y,o_porta).image_number-1 {
+			collisionBase(instance_nearest(x,y,o_porta));
+		}
 	}
 	y += vsp;
 	x += hsp;

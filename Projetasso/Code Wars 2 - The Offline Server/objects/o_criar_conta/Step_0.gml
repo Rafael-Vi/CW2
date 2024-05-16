@@ -50,7 +50,11 @@ if place_meeting(x,y,o_mira) && mouse_check_button_released(mb_left) {
 			{
 				nome: o_textBox.text,
 				palavrapasse: base64_encode(o_textPassBox.text),
-				sala: 5
+				sala: 6,
+				som_geral: 10,
+				som_musica: 10,
+				som_efeitos: 10,
+				som_ui: 10
 			}
 		);
 		FirebaseFirestore(global.root).Set(_doc);
@@ -59,3 +63,7 @@ if place_meeting(x,y,o_mira) && mouse_check_button_released(mb_left) {
 	}
 }
 if (keyboard_check(vk_anykey)) erro = 0;
+
+if (data == -1) && (alarm[0] <= 0 || (place_meeting(x,y,o_mira) && mouse_check_button_released(mb_left))) {
+	room_goto(rm_menu_offline);
+}

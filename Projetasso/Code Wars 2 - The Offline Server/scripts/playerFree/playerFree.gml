@@ -2,7 +2,8 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 para obter mais informações
 function playerFree(){
 	if hp {
-		sprite_index = s_avelino;
+		image_speed = 1;
+		image_index = 0;
 		inputDirection = point_direction(0,0,global.key_right-global.key_left,global.key_down-global.key_up);
 		inputMagnitude = (global.key_right - global.key_left != 0) || (global.key_down - global.key_up != 0);
 		
